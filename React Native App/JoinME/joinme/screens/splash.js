@@ -1,10 +1,17 @@
 import React, {Component} from 'react';
 import {StyleSheet, Image, View, Dimensions, StatusBar, Button, ToastAndroid} from 'react-native';
 import SvgComponent from '../components/svgcomponent';
+import {fetchId} from '../global/fetchFromStrorage';
+
 export default class Splash extends Component{
     componentDidMount(){
         setTimeout(() => {
-            this.props.navigation.navigate('Login')
+                if(fetchId !== null){
+                    this.props.navigation.navigate('BottomNavBar')
+                      }else{
+                    this.props.navigation.navigate('Login')
+                      }
+            
         }, 2000);
     }
     render(){

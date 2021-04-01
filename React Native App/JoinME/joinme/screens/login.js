@@ -6,6 +6,10 @@ import MybuttonOutlined from '../components/mybuttonoutlined';
 import Linetextline from '../components/linetextline';
 import { TextInput } from 'react-native-paper';
 import ProgressDialog from 'react-native-progress-dialog';
+import {BASE_URL} from '../apiurls/apiURLs';
+import {STORAGE_KEY} from '../global/global';
+import AsyncStorage from '@react-native-community/async-storage'
+import styles from '../css/css'
 
 export default class Login extends React.Component{
   constructor(props){
@@ -17,6 +21,7 @@ export default class Login extends React.Component{
       pass: '',
       isVisible: false
     };
+    
   }
 
 
@@ -29,11 +34,12 @@ export default class Login extends React.Component{
     this.setState({isVisible: false})
       Alert.alert('Alert', 'Please enter the username and password')
     }else{
-      var apiURL = 'http://34.125.59.211/User/app/api/login.php';
+      var apiURL = BASE_URL+'/User/app/api/login.php';
       var data = {
             uname: uname,
             pass: pass
           }
+          
         fetch(apiURL, {
           method: 'post',
           headers: {
@@ -45,6 +51,9 @@ export default class Login extends React.Component{
   .then(response => response.json())
   .then((json) => {
     if(json.status === 200){
+      const uid = json.data ? json.data.uid : null;
+      AsyncStorage.setItem(STORAGE_KEY, uid)
+      console.log(json.data.uid)
     this.setState({isVisible: false})
       this.props.navigation.navigate('Home')
     }else{
@@ -122,68 +131,3 @@ export default class Login extends React.Component{
 }
 
 
-const {width, height} = Dimensions.get("screen")
-const styles = StyleSheet.create({
-  rootView: {
-    flex: 1,
-
-  },
-  titlesection: {
-    fontSize: width / 10,
-    fontWeight: 'bold',
-    color: 'white',
-    marginStart: 20
-  },
-  logintitlesection: {
-    fontSize: width / 15,
-    fontWeight: 'bold',
-    paddingTop: 30,
-    paddingStart: 20,
-    color: 'gray'
-  },
-  top: {
-    flex: 1,
-    paddingBottom: 30,
-  },
-  innertop: {
-    backgroundColor: '#0000',
-    height: height / 2,
-    justifyContent: 'center'
-  },
-  innerbtm: {
-    backgroundColor: '#fff',
-    borderTopRightRadius: 40,
-    borderTopLeftRadius: 40,
-    height: height,
-    elevation: 20
-
-  },
-  btm: {
-    backgroundColor: '#0000',
-    flex: 2
-  },
-  bgimg: {
-    width: width,
-    height: height, 
-    position: 'absolute', 
-    top: 0, 
-    left: 0 
-  },
-  txtshadow: {
-    textShadowColor: 'rgba(0, 0, 0, 0.75)',
-    textShadowOffset: {width: -1, height: 1},
-    textShadowRadius: 10
-  },
-  inputalign: {
-    marginStart: 20,
-    marginEnd: 20,
-    marginTop: 10
-  },
-  info: {
-    fontWeight: 'bold',
-    color: 'gray',
-    marginStart: 20,
-    marginTop: 5,
-    marginBottom: 5
-  }
-})
