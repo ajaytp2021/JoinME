@@ -7,7 +7,6 @@ import Toolbar from '../components/toolbar';
 export default function Profile(){
     return(
         <View style={styles.root}>
-            <Toolbar />
             <View style={styles.profilePadding}>
                 <ScrollView>
                 <View style={styles.card}>

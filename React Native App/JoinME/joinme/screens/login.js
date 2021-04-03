@@ -9,7 +9,6 @@ import ProgressDialog from 'react-native-progress-dialog';
 import {BASE_URL} from '../apiurls/apiURLs';
 import {STORAGE_KEY} from '../global/global';
 import AsyncStorage from '@react-native-community/async-storage'
-import styles from '../css/css'
 
 export default class Login extends React.Component{
   constructor(props){
@@ -55,7 +54,7 @@ export default class Login extends React.Component{
       AsyncStorage.setItem(STORAGE_KEY, uid)
       console.log(json.data.uid)
     this.setState({isVisible: false})
-      this.props.navigation.navigate('Home')
+      this.props.navigation.navigate('BottomNavBar')
     }else{
     this.setState({isVisible: false})
     Alert.alert('Alert', json.msg)
@@ -85,13 +84,13 @@ export default class Login extends React.Component{
       );
     }
     return (
-      <View style={styles.rootView}>
+      <View style={styles.root}>
         <StatusBar translucent backgroundColor="transparent" />
-        <Image source={require('../assets/bgimg.jpg')} style={styles.bgimg}/>
+         <Image source={require('../assets/bgimg.jpg')} style={styles.bgimg}/>
         <View style={styles.top}>
           <View style={styles.innertop}>
-            <Text style={[styles.titlesection, styles.txtshadow]}>Welcome to</Text>
-            <Text style={[styles.titlesection, styles.txtshadow]}>JoinME</Text>
+            <Text style={styles.titlesection}>Welcome to</Text>
+            <Text style={styles.titlesection}>JoinME</Text>
           </View>
         </View>
         <View style={styles.btm}>
@@ -122,12 +121,83 @@ export default class Login extends React.Component{
 
     
         </View>
-        </View>
+        </View> 
         <ProgressDialog visible={this.state.isVisible} />
       </View>
     );
   }
 
 }
+const {width, height} = Dimensions.get("screen")
+const styles = StyleSheet.create({
+  root: {
+    flex: 1,
+    width: width,
+    height: height,
+},
+rootsample: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center'
+},
+titlesection: {
+    fontSize: width / 10,
+    fontWeight: 'bold',
+    color: 'white',
+    marginStart: 20
+  },
+  logintitlesection: {
+    fontSize: width / 15,
+    fontWeight: 'bold',
+    paddingTop: 30,
+    paddingStart: 20,
+    color: 'gray'
+  },
+  top: {
+    flex: 1,
+    paddingBottom: 30,
+  },
+  innertop: {
+    backgroundColor: '#0000',
+    height: height / 2,
+    justifyContent: 'center'
+  },
+  innerbtm: {
+    backgroundColor: '#fff',
+    borderTopRightRadius: 40,
+    borderTopLeftRadius: 40,
+    height: height,
+    elevation: 20
+
+  },
+  btm: {
+    backgroundColor: '#0000',
+    flex: 2
+  },
+  bgimg: {
+    width: width,
+    height: height, 
+    position: 'absolute', 
+    top: 0, 
+    left: 0 
+  },
+  txtshadow: {
+    textShadowColor: 'rgba(0, 0, 0, 0.75)',
+    textShadowOffset: {width: -1, height: 1},
+    textShadowRadius: 10
+  },
+  inputalign: {
+    marginStart: 20,
+    marginEnd: 20,
+    marginTop: 10
+  },
+  info: {
+    fontWeight: 'bold',
+    color: 'gray',
+    marginStart: 20,
+    marginTop: 5,
+    marginBottom: 5
+  }
+})
 
 

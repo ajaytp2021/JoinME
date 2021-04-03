@@ -1,2 +1,2 @@
-const STORAGE_KEY = '@save_id';
+const STORAGE_KEY = 'uid';
 export {STORAGE_KEY}

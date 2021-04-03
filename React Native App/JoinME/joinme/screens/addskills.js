@@ -7,7 +7,6 @@ export default class AddSkills extends Component{
     render(){
         return(
             <View style={styles.root}>
-                <Toolbar />
                 <Text>Add skills</Text>
             </View>
         );

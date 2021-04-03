@@ -1,7 +1,9 @@
 import {StyleSheet, Dimensions} from 'react-native';
-export default StyleSheet.create({
+export default styles = StyleSheet.create({
     root: {
         flex: 1,
+        width: width,
+        height: height,
     },
     rootsample: {
         flex: 1,
@@ -75,13 +77,23 @@ export default StyleSheet.create({
           padding: 10,
           borderRadius: 5
       },
-      toolbar: {
-          width: width,
+      toolbarview: {
+        width: width,
           height: 100,
           backgroundColor: 'tomato',
+      },
+      toolbar: {
+          position: 'absolute',
+          bottom: 0,
+          
+          flexDirection: 'row',
+          alignItems: 'center',
           elevation: 15,
           marginBottom: 5,
 
       },
+      toolbartitle: {
+        marginStart: 10
+      }
 })
 const {width, height} = Dimensions.get("screen")

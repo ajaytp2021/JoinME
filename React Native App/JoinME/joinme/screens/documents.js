@@ -7,7 +7,6 @@ export default class Documents extends Component{
     render(){
         return(
             <View style={styles.root}>
-                <Toolbar />
                 <Text>Documents</Text>
             </View>
         );

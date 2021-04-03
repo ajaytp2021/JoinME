@@ -1,10 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import Home from './home';
 import Profile from './profile';
 import AddSkills from './addskills';
 import Documents from './documents';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Alert } from 'react-native';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,6 +23,7 @@ export default function BottomNavBar() {
             }else{
               iconName = focused ? 'person' : 'person-outline';
             }
+            
             return <Ionicons name={iconName} size={size} color={color} />
           }
         })} tabBarOptions={{

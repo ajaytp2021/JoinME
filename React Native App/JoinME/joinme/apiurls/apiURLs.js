@@ -1,2 +1,2 @@
-const BASE_URL = 'http://34.125.102.116';
+const BASE_URL = 'http://joinme.ajaytp.in';
 export {BASE_URL}
