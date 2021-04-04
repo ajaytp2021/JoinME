@@ -71,7 +71,13 @@ export default class Home extends Component{
                 <FlatList
                 data={this.state.datasource}
                 renderItem={this.renderItem}
-                keyExtractor={(item, index) => index} />
+                keyExtractor={(item, index) => index}
+                refreshing={this.state.isVisible}
+                onRefresh={() => {
+                    AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+                        this.getAllPosts(value)
+                    });
+                }} />
                 <ProgressDialog visible={this.state.isVisible} />
             </View>
         );
