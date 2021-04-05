@@ -27,7 +27,7 @@ export default function BottomNavBar() {
             return <Ionicons name={iconName} size={size} color={color} />
           }
         })} tabBarOptions={{
-          activeTintColor: 'tomato',
+          activeTintColor: '#34495E',
           inactiveTintColor: 'gray',
         }}>
         <Tab.Screen name="Home" component={Home} />

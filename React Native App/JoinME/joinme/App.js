@@ -28,7 +28,7 @@ export default function Application(){
         <Stack.Screen name='Login' component={Login} options={{headerShown: false, headerTransparent: true}} />
         <Stack.Screen name='Register' component={Register} options={{headerShown: true, headerTransparent: true}} />
         <Stack.Screen name='Home' component={Home} options={{headerShown: false, headerTransparent: false}} />
-        <Stack.Screen name='BottomNavBar' component={BottomNavBar} options={{headerShown: true, headerTransparent: false, headerTitle: 'JoinME', headerLeft: () => <Ionicons name={'menu'} size={28} color={'black'} onPress={clickMainIcon} style={{marginStart: 10}} />, headerRight: () => <Ionicons name={'options'} size={28} style={{'marginRight': 10}} />}} />
+        <Stack.Screen name='BottomNavBar' component={BottomNavBar} options={{headerShown: true, headerTransparent: false, headerStyle: {backgroundColor: '#34495E'}, headerTitleStyle: {color: 'white'}, headerTitle: 'JoinME', headerLeft: () => <Ionicons name={'menu'} size={28} color={'white'} onPress={clickMainIcon} style={{marginStart: 10}} />, headerRight: () => <Ionicons name={'options'} size={28} color={'white'} style={{'marginRight': 10}} />}} />
         <Stack.Screen name='Profile' component={Profile} options={{headerShown: false, headerTransparent: false}} />
         <Stack.Screen name='AddSkills' component={AddSkills} options={{headerShown: false, headerTransparent: false}} />
         <Stack.Screen name='Documents' component={Documents} options={{headerShown: false, headerTransparent: false}} />

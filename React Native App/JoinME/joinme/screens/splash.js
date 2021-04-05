@@ -38,7 +38,8 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: 'white'
+        backgroundColor: 'white',
+        backgroundColor: '#34495E'
     },
     imgview: {
         width: width / 2,
