@@ -32,10 +32,17 @@ export default class Home extends Component{
         this.handleLoadMore = this.handleLoadMore.bind(this);
     }
     
-    componentDidMount(){
-        AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+    async componentDidMount(){
+      if(this.state.isRefreshing || this.state.isFooterLoading){
+        this.setState({isVisible: false});
+    }else{
+        this.setState({isVisible: true});
+    }
+        await AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+          console.log(value);
             this.getAllPosts(value, this.state.page);
         });
+        
     }
     getAllPosts(uid, page){
         // this.refs.loading.show();
@@ -111,6 +118,7 @@ export default class Home extends Component{
       handleLoadMore = () => {
           if(this.state.currentCount == this.state.minCount && !this.state.isFooterLoading){
         AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+          console.log(value);
             this.setState({isFooterLoading: true})
             this.getAllPosts(value, this.state.page)
         });
@@ -123,7 +131,7 @@ export default class Home extends Component{
               <View style={{padding: 15}}>
                   <View style={{flexDirection: 'row'}}>
                   <Text style={{fontSize: 17, marginBottom: 10, fontWeight: 'bold'}}>{item.ptitle}</Text>
-                  <Paragraph style={{textAlign: 'right', flex: 1}}>{(this.state.today - this.state.pdate)}</Paragraph>
+                  {/* <Paragraph style={{textAlign: 'right', flex: 1}}>{(this.state.today - this.state.pdate)}</Paragraph> */}
                   </View>
                   <Text style={{fontWeight: 'bold', marginBottom:30, color: 'gray'}}>Monthly: {'\u20B9'}{item.salary}</Text>
                   <View style={{flexDirection: 'row'}}>

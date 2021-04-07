@@ -1,23 +1,23 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import React, {Component} from 'react';
-import {StyleSheet, Image, View, Dimensions, StatusBar, Button, ToastAndroid} from 'react-native';
+import {StyleSheet, Image, View, Dimensions, StatusBar, Settings, ToastAndroid} from 'react-native';
 import SvgComponent from '../components/svgcomponent';
 import { STORAGE_KEY } from '../global/global';
-
+                
 export default class Splash extends Component{
+    constructor(props){
+        super(props);
+        this.state = {
+            uid: null
+        }
+    }
+    
     componentDidMount(){
         setTimeout(() => {
-                // if(fetchId != null || fetchId != ''){
-                //     this.props.navigation.navigate('BottomNavBar')
-                //       }else{
-                //     this.props.navigation.navigate('Login')
-                //       }
-                // Alert.alert(fetchId)
-                AsyncStorage.getItem(STORAGE_KEY).then((value) => {
-                 value ? this.props.navigation.navigate('BottomNavBar') : this.props.navigation.navigate('Login')
-                  })
                 
-            
+                AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+                 value ? this.props.navigation.navigate('NavigationDrawer') : this.props.navigation.navigate('Login')
+                  })
         }, 2000);
     }
     render(){

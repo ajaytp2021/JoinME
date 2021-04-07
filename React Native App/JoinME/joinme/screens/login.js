@@ -24,7 +24,7 @@ export default class Login extends React.Component{
   }
 
 
-   checkLogin = () =>{
+   checkLogin = async () =>{
     // this.refs.loading.show();
     this.setState({isVisible: true})
     var uname = this.state.uname || "";
@@ -51,10 +51,17 @@ export default class Login extends React.Component{
   .then((json) => {
     if(json.status === 200){
       const uid = json.data ? json.data.uid : null;
-      AsyncStorage.setItem(STORAGE_KEY, uid)
-      console.log(json.data.uid)
-    this.setState({isVisible: false})
-      this.props.navigation.navigate('BottomNavBar')
+      AsyncStorage.setItem(STORAGE_KEY, uid).then(() => {
+        AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+          if(value){
+          this.setState({isVisible: false})
+        this.props.navigation.navigate('NavigationDrawer')
+        }else{
+          Alert.alert('error store data');
+        }
+        })
+      })
+    
     }else{
     this.setState({isVisible: false})
     Alert.alert('Alert', json.msg)
