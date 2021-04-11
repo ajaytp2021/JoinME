@@ -48,11 +48,11 @@ export default class Login extends React.Component{
           body: JSON.stringify(data)
         })
   .then(response => response.json())
-  .then((json) => {
+  .then(async (json) => {
     if(json.status === 200){
       const uid = json.data ? json.data.uid : null;
-      AsyncStorage.setItem(STORAGE_KEY, uid).then(() => {
-        AsyncStorage.getItem(STORAGE_KEY).then((value) => {
+      await AsyncStorage.setItem(STORAGE_KEY, uid).then(async () => {
+        await AsyncStorage.getItem(STORAGE_KEY).then((value) => {
           if(value){
           this.setState({isVisible: false})
         this.props.navigation.navigate('NavigationDrawer')

@@ -9,6 +9,9 @@ import Splash from './screens/splash';
 import Register from './screens/register';
 import NavigationDrawer from './screens/navigationdrawer';
 import { Alert } from 'react-native';
+import ViewPost from './screens/viewpost';
+import PRIMARY_COLOR from './assets/colors/colors'
+
 
 const Stack = createStackNavigator();
 const clickMainIcon = () => {
@@ -22,7 +25,8 @@ export default function Application(){
         <Stack.Screen name='Splash' component={Splash} options={{headerShown: false, headerTransparent: true}} />
         <Stack.Screen name='Login' component={Login} options={{headerShown: false, headerTransparent: true}} />
         <Stack.Screen name='Register' component={Register} options={{headerShown: true, headerTransparent: true}} />
-        <Stack.Screen name='NavigationDrawer' component={NavigationDrawer} options={{headerShown: false, headerTintColor: '#34495E'}} />
+        <Stack.Screen name='NavigationDrawer' component={NavigationDrawer} options={{headerShown: false, headerTintColor: PRIMARY_COLOR}} />
+        <Stack.Screen name="ViewPost" component={ViewPost} options={{headerShown: true, headerTitle: 'View Post', headerTintColor: 'white', headerStyle: {backgroundColor: '#34495E'}}} />
       </Stack.Navigator>
     </NavigationContainer>
   );

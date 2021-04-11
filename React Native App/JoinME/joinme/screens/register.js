@@ -5,6 +5,7 @@ import Mybutton from '../components/mybutton';
 import MybuttonOutlined from '../components/mybuttonoutlined';
 import Linetextline from '../components/linetextline';
 import { TextInput } from 'react-native-paper';
+import { ScrollView } from 'react-native';
 
 export default class Register extends React.Component{
   constructor(props){
@@ -12,6 +13,12 @@ export default class Register extends React.Component{
     
     this.state = {
       isReady: false,
+      uname: '',
+      pass: '',
+      cpass: '',
+      name: '',
+      gender: '',
+      dob: ''
     };
   }
 
@@ -45,12 +52,14 @@ export default class Register extends React.Component{
         <View style={styles.btm}>
         <View style={styles.innerbtm}>
           <Text style={styles.logintitlesection}>Register</Text>
+          <ScrollView>
     <TextInput
       label="Username"
       placeholder="Enter username here"
       mode="outlined"
       secureTextEntry={false}
       style={styles.inputalign}
+      onChangeText={(uname)=>this.setState({uname})}
     />
     <TextInput
       label="Password"
@@ -86,7 +95,11 @@ export default class Register extends React.Component{
       style={styles.inputalign}
       color={'#fff'}
     />
+
     <Mybutton text="Sign Up" onPress={this.registerClick} btncolor={'#4827FF'} />
+    </ScrollView>
+
+
     {/* <View style={{marginTop: 20}}>
     <Linetextline text={'OR'} marginStart={20} marginEnd={20} />
     </View> */}

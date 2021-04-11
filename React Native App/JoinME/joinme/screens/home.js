@@ -8,8 +8,11 @@ import {STORAGE_KEY} from '../global/global';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Avatar, Button, Card, Title, Paragraph, Divider } from 'react-native-paper';
 import MoreLessText from '../components/morelesstext'
+import Loading from '../components/loading'
 import { TouchableWithoutFeedback } from 'react-native';
 import moment from 'moment';
+import { Alert } from 'react-native';
+import { SafeAreaView } from 'react-native';
 
 
 export default class Home extends Component{
@@ -40,12 +43,14 @@ export default class Home extends Component{
     }
         await AsyncStorage.getItem(STORAGE_KEY).then((value) => {
           console.log(value);
+          this.setState({uid: value})
             this.getAllPosts(value, this.state.page);
         });
         
     }
     getAllPosts(uid, page){
         // this.refs.loading.show();
+        console.log('----'+this.state.isRefreshing+'----'+this.state.isFooterLoading);
         if(this.state.isRefreshing || this.state.isFooterLoading){
             this.setState({isVisible: false});
         }else{
@@ -111,27 +116,35 @@ export default class Home extends Component{
 
       renderFooter = () => {
           return(
-              this.state.isFooterLoading ? <View style={{width: '100%', alignItems: 'center', backgroundColor: '#eee'}}><Text>Loading more...</Text></View> : null
+              this.state.isFooterLoading ? <View style={{width: '100%', alignItems: 'center', backgroundColor: 'white', padding: 10}}><Loading isVisible={this.state.isFooterLoading} text={'Loading more...'} /></View> : null
           );
       }
 
-      handleLoadMore = () => {
-          if(this.state.currentCount == this.state.minCount && !this.state.isFooterLoading){
-        AsyncStorage.getItem(STORAGE_KEY).then((value) => {
-          console.log(value);
-            this.setState({isFooterLoading: true})
-            this.getAllPosts(value, this.state.page)
-        });
+      actionOnRow = (item) =>{
+        Alert.alert('Message', item.jtitle);
+      }
+
+      handleLoadMore = async () => {
+        
+        console.log(this.state.currentCount)
+        console.log(this.state.minCount)
+        console.log(this.state.isFooterLoading)
+          if(this.state.currentCount == this.state.minCount && this.state.totalCount != this.state.currentCount && !this.state.isFooterLoading){
+        console.log('isFooterLoaded');
+        await this.setState({isFooterLoading: true});
+        console.log(this.state.isFooterLoading)
+            this.getAllPosts(this.state.uid, this.state.page)
     }
       }
 
-      renderItem = ({item}) => (
-          <TouchableWithoutFeedback>
+      renderItem = ({item, index}) => (
+          <TouchableWithoutFeedback onPress={() => {
+            this.props.navigation.navigate('ViewPost', {data: [this.state.datasource[index]], uid: this.state.uid});
+          }}>
           <View style={{backgroundColor: 'white'}}>
               <View style={{padding: 15}}>
                   <View style={{flexDirection: 'row'}}>
                   <Text style={{fontSize: 17, marginBottom: 10, fontWeight: 'bold'}}>{item.ptitle}</Text>
-                  {/* <Paragraph style={{textAlign: 'right', flex: 1}}>{(this.state.today - this.state.pdate)}</Paragraph> */}
                   </View>
                   <Text style={{fontWeight: 'bold', marginBottom:30, color: 'gray'}}>Monthly: {'\u20B9'}{item.salary}</Text>
                   <View style={{flexDirection: 'row'}}>
@@ -164,32 +177,30 @@ export default class Home extends Component{
     render(){
         if(this.state.totalCount == 0 && this.state.currentCount == 0){
             return(
+              !this.state.isVisible ? (
                 <View>
                     <Text>No data found</Text>
-                <ProgressDialog visible={this.state.isVisible} />
-                </View>
+                </View> ) : (<Loading isVisible={this.state.isVisible} />)
             );
         }
         return(
-            <View style={styles.root}>
+            <SafeAreaView style={styles.root}>
                 <StatusBar animated={true} />
                 <FlatList
                 data={this.state.datasource}
-                renderItem={this.renderItem}
+                renderItem={({item, index}) => this.renderItem({item, index})}
                 keyExtractor={(item, index) => index}
                 refreshing={this.state.isRefreshing}
-                onRefresh={() => {
-                    AsyncStorage.getItem(STORAGE_KEY).then((value) => {
-                        this.setState({isRefreshing: true})
-                        this.getAllPosts(value, 0)
-                    });
+                onRefresh={async () => {
+                        await this.setState({ isRefreshing: true });
+                        this.getAllPosts(this.state.uid, 0)
                 }}
                 onEndReached={this.handleLoadMore.bind(this)}
                 onEndReachedThreshold={0}
                 ListFooterComponent={this.renderFooter}
                 showsVerticalScrollIndicator={false} />
                 <ProgressDialog visible={this.state.isVisible} />
-            </View>
+            </SafeAreaView>
         );
     }
 }

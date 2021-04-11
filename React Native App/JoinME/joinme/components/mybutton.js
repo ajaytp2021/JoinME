@@ -21,7 +21,8 @@ const styles = StyleSheet.create({
         paddingVertical: 16,
         marginStart: 20,
         marginEnd: 20,
-        marginTop: 20
+        marginTop: 20,
+        bottom: 0
     },
     text: {
         color: 'white',

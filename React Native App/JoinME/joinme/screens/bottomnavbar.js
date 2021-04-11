@@ -5,7 +5,7 @@ import Profile from './profile';
 import AddSkills from './addskills';
 import Documents from './documents';
 import Ionicons from 'react-native-vector-icons/Ionicons';
-import { Alert } from 'react-native';
+import { PRIMARY_COLOR } from '../assets/colors/colors';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,7 +27,7 @@ export default function BottomNavBar() {
             return <Ionicons name={iconName} size={size} color={color} />
           }
         })} tabBarOptions={{
-          activeTintColor: '#34495E',
+          activeTintColor: PRIMARY_COLOR,
           inactiveTintColor: 'gray',
         }}>
         <Tab.Screen name="Home" component={Home} />

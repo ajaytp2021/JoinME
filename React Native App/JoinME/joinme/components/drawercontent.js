@@ -5,9 +5,24 @@ import { Drawer, Caption, Title } from 'react-native-paper';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import AsyncStorage from '@react-native-community/async-storage';
 import { Alert } from 'react-native';
+import { STORAGE_KEY } from '../global/global';
+import ProgressDialog from 'react-native-progress-dialog';
 
 
 export default function DrawerContent(props){
+    const logout = async () => {
+        await AsyncStorage.getItem(STORAGE_KEY).then(async (value) => {
+            if(value){
+                <ProgressDialog isvisible={true} />
+                await AsyncStorage.removeItem(STORAGE_KEY, (error) => {
+                    console.log(error);
+                }).then( async () => {
+                        await this.props.naviagation.navigate('Login');
+
+                    })
+            } 
+        })
+    }
     return(
         <View style={styles.rootview}>
             <DrawerContentScrollView {...props}>
@@ -28,17 +43,16 @@ export default function DrawerContent(props){
                     <Ionicons name={'document-text-outline'} color={color} size={size} />
                 )} label={'My Job Requests'} onPress={() => {props.navigation.navigate('MyJobRequests')}} />
                 <DrawerItem icon={({color, size}) => (
+                    <Ionicons name={'pie-chart-outline'} color={color} size={size} />
+                )} label={'Generate Report'} onPress={() => {props.navigation.navigate('MyJobRequests')}} />
+                <DrawerItem icon={({color, size}) => (
                     <Ionicons name={'log-out-outline'} color={color} size={size} />
-                )} label={'Logout'} onPress={() => {
-                    Alert.alert('Logout clicked')
-                }} />
+                )} label={'Logout'} onPress={() => logout()} />
             </Drawer.Section>
             </DrawerContentScrollView>
             <Drawer.Section>
                 <View style={styles.innerhead}>
-                    <Caption>Created by Ajay T P</Caption>
-                    <Caption>Regular MCA 2018-21</Caption>
-                    <Caption>Reg no.: 12087</Caption>
+                    <Caption>JoinME</Caption>
                 </View>
             </Drawer.Section>
             

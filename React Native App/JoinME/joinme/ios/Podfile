@@ -9,12 +9,14 @@ target 'joinme' do
   use_react_native!(
     :path => config[:reactNativePath],
     # to enable hermes on iOS, change `false` to `true` and then install pods
-    :hermes_enabled => false
+    :hermes_enabled => true
   )
 
   pod 'RNSVG', :path => '../node_modules/react-native-svg'
 
   pod 'RNVectorIcons', :path => '../node_modules/react-native-vector-icons'
+
+
 
   target 'joinmeTests' do
     inherit! :complete

@@ -27,6 +27,7 @@
     "react-native-elements": "^3.3.2",
     "react-native-gesture-handler": "^1.10.3",
     "react-native-material-textfield": "^0.16.1",
+    "react-native-multistep-forms": "^0.0.1",
     "react-native-paper": "^4.7.2",
     "react-native-progress-dialog": "^0.0.5",
     "react-native-reanimated": "^2.0.1",
