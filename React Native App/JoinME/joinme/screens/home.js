@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
-import {View, Text, FlatList, ActivityIndicator} from 'react-native';
-import styles from '../css/css'
+import {View, Text, FlatList, BackHandler} from 'react-native';
+import styles from '../css/css';
 import { StatusBar } from 'react-native';
 import ProgressDialog from 'react-native-progress-dialog';
 import {BASE_URL} from '../apiurls/apiURLs';
@@ -13,6 +13,9 @@ import { TouchableWithoutFeedback } from 'react-native';
 import moment from 'moment';
 import { Alert } from 'react-native';
 import { SafeAreaView } from 'react-native';
+import { PRIMARY_COLOR } from '../assets/colors/colors';
+import { ScrollView } from 'react-native';
+import Ripple from 'react-native-material-ripple';
 
 
 export default class Home extends Component{
@@ -34,6 +37,8 @@ export default class Home extends Component{
         }
         this.handleLoadMore = this.handleLoadMore.bind(this);
     }
+
+  
     
     async componentDidMount(){
       if(this.state.isRefreshing || this.state.isFooterLoading){
@@ -46,6 +51,7 @@ export default class Home extends Component{
           this.setState({uid: value})
             this.getAllPosts(value, this.state.page);
         });
+
         
     }
     getAllPosts(uid, page){
@@ -73,7 +79,7 @@ export default class Home extends Component{
             })
       .then(response => response.json())
       .then((json) => {
-          
+          if(json.status === 200){
           this.setState({isVisible: false,
              page: json.page, 
              datasource: this.state.isRefreshing ? json.data : this.state.datasource.concat(json.data),
@@ -86,7 +92,14 @@ export default class Home extends Component{
              today: moment(json.today).format('YYYY-MM-DD'),
              pdate: moment(json.pdate).format('YYYY-MM-DD')
             })
-          console.log(json)
+          }else{
+            this.setState({isVisible: false,
+              isRefreshing: false,
+              isVisible: false,
+              isFooterLoading: false
+             })
+          }
+
         // json.data.map((each) => {
 
         // })
@@ -138,41 +151,36 @@ export default class Home extends Component{
       }
 
       renderItem = ({item, index}) => (
-          <TouchableWithoutFeedback onPress={() => {
+            <Ripple onPress={() => {
             this.props.navigation.navigate('ViewPost', {data: [this.state.datasource[index]], uid: this.state.uid});
           }}>
           <View style={{backgroundColor: 'white'}}>
               <View style={{padding: 15}}>
                   <View style={{flexDirection: 'row'}}>
-                  <Text style={{fontSize: 17, marginBottom: 10, fontWeight: 'bold'}}>{item.ptitle}</Text>
+                  <Text style={{fontSize: 17, marginBottom: 10, fontWeight: 'bold', color: PRIMARY_COLOR}}>{item.ptitle.toUpperCase()}</Text>
                   </View>
-                  <Text style={{fontWeight: 'bold', marginBottom:30, color: 'gray'}}>Monthly: {'\u20B9'}{item.salary}</Text>
-                  <View style={{flexDirection: 'row'}}>
-                  <View style={{flexDirection: 'column', width: '50%'}}>
-                    <Text style={{textAlign: 'center', fontWeight: 'bold', color: 'gray'}}>Developers Needed</Text>
-                    <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 20}}>{item.nousers}</Text>
-                  </View>
-                  <View style={{flexDirection: 'column', width: '50%'}}>
-                      <Text style={{textAlign: 'center', fontWeight: 'bold'}}>{item.ulevel.toUpperCase()}</Text>
-                      <Text style={{textAlign: 'center', color: 'gray'}}>Experience Level</Text>
-                  </View>
-                  </View>
-                  <View style={{flexDirection: 'row', marginTop: 10, marginBottom: 10}}>
-                  <View style={{flexDirection: 'column', width: '50%', marginTop: 10, marginBottom: 10}}>
+                  <Text style={{color: 'gray', fontWeight: 'bold', marginBottom: 5}}>Developers needed</Text>
+                  <ScrollView><View style={{flex: 1, flexDirection: 'row'}}>
+                  {item.skills.map((each, index) => {
+                    return (<Text style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={index}>{each}</Text>)
+                  })}
+                  </View></ScrollView>
+                  <View style={{flexDirection: 'row', marginTop: 10, marginBottom: 10, justifyContent: 'space-between'}}>
+                  <View style={{flexDirection: 'column', marginTop: 10, marginBottom: 10, width: '40%', borderWidth: 1, borderColor: '#eee', borderRadius: 5, justifyContent: 'center', paddingTop: 10, paddingBottom: 10}}>
                     <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 13}}>{item.cname.toUpperCase()}</Text>
-                    <Text style={{textAlign: 'center', textAlign: 'center', color: 'gray'}}>Company</Text>
+                    <Text style={{textAlign: 'center', color: 'gray'}}>Company</Text>
                   </View>
-                  <View style={{marginTop: 10, marginBottom: 10, right: 0, width: '50%'}}>
-                      <Text style={{textAlign: 'center', backgroundColor: '#DBF1FF', alignSelf: 'center', paddingStart: 10, paddingEnd: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50, fontSize: 10, fontWeight: 'bold'}}>{item.jtitle}</Text>
+                  <View style={{flexDirection: 'column', marginTop: 10, marginBottom: 10, width: '40%', borderWidth: 1, borderColor: '#eee', borderRadius: 5, justifyContent: 'center', paddingTop: 10, paddingBottom: 10}}>
+                    <Text style={{textAlign: 'center', fontWeight: 'bold', fontSize: 13}}>{moment(item.edate).format('Do MMMM YYYY')}</Text>
+                    <Text style={{textAlign: 'center', color: 'gray'}}>End date</Text>
                   </View>
                   </View>
                   
-                  <MoreLessText fullText={item.desc} />
             
               </View>
               <View style={{flex: 1, height: 1, backgroundColor: '#D3D3D3'}} />
           </View>
-          </TouchableWithoutFeedback>
+          </Ripple>
       )
     render(){
         if(this.state.totalCount == 0 && this.state.currentCount == 0){

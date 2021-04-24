@@ -1,6 +1,6 @@
 import AsyncStorage from '@react-native-community/async-storage';
 import React, {Component} from 'react';
-import {StyleSheet, Image, View, Dimensions, StatusBar, Settings, ToastAndroid} from 'react-native';
+import {StyleSheet, Image, View, Dimensions, StatusBar, BackHandler, ToastAndroid} from 'react-native';
 import SvgComponent from '../components/svgcomponent';
 import { STORAGE_KEY } from '../global/global';
                 
@@ -19,6 +19,12 @@ export default class Splash extends Component{
                  value ? this.props.navigation.navigate('NavigationDrawer') : this.props.navigation.navigate('Login')
                   })
         }, 2000);
+        BackHandler.addEventListener('hardwareBackPress', this.handleBackButton.bind(this));
+        
+    }
+
+    handleBackButton(){
+        BackHandler.exitApp();
     }
     render(){
     return(

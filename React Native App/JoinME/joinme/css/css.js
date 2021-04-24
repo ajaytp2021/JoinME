@@ -1,14 +1,17 @@
 import {StyleSheet, Dimensions} from 'react-native';
+import { BG_COLOR } from '../assets/colors/colors';
 export default styles = StyleSheet.create({
     root: {
         flex: 1,
         width: width,
         height: height,
+        backgroundColor: BG_COLOR
     },
     rootsample: {
         flex: 1,
         justifyContent: 'center',
-        alignItems: 'center'
+        alignItems: 'center',
+        backgroundColor: BG_COLOR
     },
     titlesection: {
         fontSize: width / 10,
@@ -69,13 +72,13 @@ export default styles = StyleSheet.create({
         marginBottom: 5
       },
       profilePadding: {
-          padding: 10
+          paddingTop: 10,
+          paddingBottom: 10
       },
       card: {
-          borderColor: 'gray',
-          borderWidth: 1,
-          padding: 10,
-          borderRadius: 5
+          backgroundColor: 'white',
+          bottom: 0,
+          marginBottom: 10
       },
       toolbarview: {
         width: width,

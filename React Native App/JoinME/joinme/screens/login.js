@@ -1,5 +1,5 @@
 import React from 'react'
-import {Button, Text, View, StyleSheet, Dimensions, Image, Alert, LogBox} from 'react-native'
+import {Button, Text, View, StyleSheet, Dimensions, Image, Alert, LogBox, BackHandler} from 'react-native'
 import { StatusBar } from 'react-native';
 import Mybutton from '../components/mybutton';
 import MybuttonOutlined from '../components/mybuttonoutlined';
@@ -75,8 +75,13 @@ export default class Login extends React.Component{
    componentDidMount() {
     this.setState({ isReady: true });
     LogBox.ignoreLogs(['Animated: `useNativeDriver`']);
+    // BackHandler.addEventListener('hardwareBackPress', this.handleBackButton.bind(this));
     
   }
+
+//   handleBackButton(){
+//     BackHandler.exitApp();
+// }
   
   registerClick = () => {
     this.props.navigation.push('Register')
