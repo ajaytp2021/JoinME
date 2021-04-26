@@ -1,0 +1,548 @@
+[03-Apr-2021 12:16:58 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:16:58 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:16:58 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:17:50 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:17:50 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:17:50 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:20:32 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:20:32 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:20:32 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:21:14 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:21:14 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:21:14 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:23:26 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:23:26 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:23:26 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:23:53 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:23:53 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:23:53 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:24:22 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:24:22 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:24:22 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:24:32 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:24:32 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:24:32 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:25:45 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:25:45 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:25:45 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:26:51 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:26:51 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:26:51 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:34:16 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:34:16 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:34:16 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:36:09 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:36:09 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:36:09 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:37:56 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:37:56 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:37:56 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:37:56 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 32
+[03-Apr-2021 12:43:56 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 10
+[03-Apr-2021 12:43:56 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:43:56 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:44:53 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:44:53 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:46:15 UTC] PHP Notice:  Undefined variable: q in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 12:46:15 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 19
+[03-Apr-2021 13:21:58 UTC] PHP Notice:  Undefined variable: finalArray in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 37
+[03-Apr-2021 13:21:58 UTC] PHP Warning:  array_merge(): Expected parameter 1 to be an array, null given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 37
+[03-Apr-2021 13:21:58 UTC] PHP Warning:  array_merge(): Expected parameter 1 to be an array, null given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 37
+[04-Apr-2021 13:11:18 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:11:18 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:18 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:18 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:11:21 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:11:21 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:21 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:21 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:11:24 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:11:24 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:24 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:24 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:11:27 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:11:27 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:27 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:27 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:11:29 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:11:29 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:29 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:11:29 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:14:55 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:14:55 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:14:55 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:14:55 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:14:58 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:14:58 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:14:58 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:14:58 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:15:00 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:15:00 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:15:00 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:15:00 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:16:00 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:16:00 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:16:00 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:16:00 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:16:02 UTC] PHP Notice:  Undefined index: uid in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[04-Apr-2021 13:16:02 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:16:02 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:16:02 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:37:45 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:37:45 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:37:45 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[04-Apr-2021 13:37:59 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:37:59 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 21
+[04-Apr-2021 13:37:59 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 48
+[05-Apr-2021 06:21:27 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[05-Apr-2021 06:21:58 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[05-Apr-2021 06:23:15 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[05-Apr-2021 06:24:01 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[05-Apr-2021 06:25:59 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[07-Apr-2021 15:10:37 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:10:37 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:10:37 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:10:37 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:11:21 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:11:21 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:11:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:11:21 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:12:36 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:12:36 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:12:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:12:36 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:14:49 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:14:49 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:14:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:14:49 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:16:17 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:16:17 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:16:17 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:16:17 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:17:06 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:17:06 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:17:06 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:17:06 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:22:46 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:22:46 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:22:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:22:46 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:23:46 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:23:46 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:23:46 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:23:46 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:25:53 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:25:53 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:25:53 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:25:53 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:27:10 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:27:10 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:27:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:27:10 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:28:44 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:28:44 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:28:44 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:28:44 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:32:17 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:32:17 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:32:17 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:32:17 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:33:36 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:33:36 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:33:36 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:33:36 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:35:01 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:35:01 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:35:01 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:35:01 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:38:14 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:38:14 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:38:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:38:14 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:40:14 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:40:14 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:40:14 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:40:14 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:45:28 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:45:28 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:45:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:45:28 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:48:25 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:48:25 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:48:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:48:25 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:49:07 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:49:07 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:49:07 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:49:07 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:50:21 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:50:21 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:50:21 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:50:21 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 15:59:00 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:59:00 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:59:00 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 15:59:00 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 16:05:47 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:05:47 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:05:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:05:47 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 16:06:42 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:06:42 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:06:42 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:06:42 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 16:08:16 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:08:16 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:08:16 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:08:16 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[07-Apr-2021 16:14:40 UTC] PHP Warning:  base64_decode() expects parameter 1 to be string, array given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 14
+[07-Apr-2021 16:14:40 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:14:40 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:14:40 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[07-Apr-2021 16:14:40 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[09-Apr-2021 08:49:11 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[09-Apr-2021 08:51:05 UTC] PHP Notice:  Undefined index: page in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[11-Apr-2021 13:26:55 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:26:55 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:27:37 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:27:37 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:27:58 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:27:58 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:28:15 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:28:15 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:29:03 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:29:03 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:29:22 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:29:22 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:29:50 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:29:50 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:31:37 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:31:37 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:33:22 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:33:22 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:34:08 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:34:08 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:36:08 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:36:08 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:36:51 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:36:51 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:38:42 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:38:42 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/global/global.php on line 3
+[11-Apr-2021 13:39:29 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[11-Apr-2021 13:39:29 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[11-Apr-2021 13:39:29 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[11-Apr-2021 13:39:29 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[11-Apr-2021 13:39:29 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[11-Apr-2021 13:39:29 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[11-Apr-2021 13:41:23 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 13:41:23 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 13:41:23 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 85
+[11-Apr-2021 13:41:23 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 85
+[11-Apr-2021 13:41:23 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 85
+[11-Apr-2021 13:41:23 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 86
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Undefined variable: DecodeData in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 69
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 69
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Undefined variable: DecodeData in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 70
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 70
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Undefined variable: DecodeData in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 71
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 71
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Undefined variable: DecodeData in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 72
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 72
+[11-Apr-2021 13:44:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[11-Apr-2021 13:45:38 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 13:45:38 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 13:45:38 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 77
+[11-Apr-2021 13:45:38 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[11-Apr-2021 13:54:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 13:54:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 13:54:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 77
+[11-Apr-2021 13:54:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[11-Apr-2021 13:55:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 13:55:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 13:55:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 77
+[11-Apr-2021 13:55:05 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[11-Apr-2021 13:58:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 13:58:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 13:58:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 77
+[11-Apr-2021 13:58:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[11-Apr-2021 13:59:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 13:59:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 13:59:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 77
+[11-Apr-2021 13:59:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[11-Apr-2021 14:00:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 75
+[11-Apr-2021 14:00:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 76
+[11-Apr-2021 14:00:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 77
+[11-Apr-2021 14:00:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/viewpost.php on line 78
+[12-Apr-2021 05:34:56 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 75
+[12-Apr-2021 05:34:56 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 76
+[12-Apr-2021 05:34:56 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 77
+[12-Apr-2021 05:35:57 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 75
+[12-Apr-2021 05:35:57 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 76
+[12-Apr-2021 05:35:57 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 77
+[12-Apr-2021 05:41:23 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 75
+[12-Apr-2021 05:41:23 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 76
+[12-Apr-2021 05:41:23 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 77
+[12-Apr-2021 05:42:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:42:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:42:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:43:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:43:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:43:19 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:44:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:44:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:44:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:44:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:44:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:44:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:45:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:45:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:45:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:45:58 UTC] PHP Warning:  Illegal string offset 'pid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:45:58 UTC] PHP Warning:  Illegal string offset 'cid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:45:58 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:46:14 UTC] PHP Warning:  Illegal string offset 'pid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:46:14 UTC] PHP Warning:  Illegal string offset 'cid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:46:14 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[12-Apr-2021 05:46:18 UTC] PHP Warning:  Illegal string offset 'pid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 12
+[12-Apr-2021 05:46:18 UTC] PHP Warning:  Illegal string offset 'cid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 13
+[12-Apr-2021 05:46:18 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/isrequestjob.php on line 14
+[14-Apr-2021 18:16:57 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:16:57 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:17:24 UTC] PHP Warning:  require(../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:17:24 UTC] PHP Fatal error:  require(): Failed opening required '../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:18:24 UTC] PHP Warning:  require(../../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:18:24 UTC] PHP Fatal error:  require(): Failed opening required '../../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:18:27 UTC] PHP Warning:  require(../../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:18:27 UTC] PHP Fatal error:  require(): Failed opening required '../../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:19:15 UTC] PHP Warning:  require(../../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:19:15 UTC] PHP Fatal error:  require(): Failed opening required '../../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:19:53 UTC] PHP Warning:  require(../../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:19:53 UTC] PHP Fatal error:  require(): Failed opening required '../../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:20:57 UTC] PHP Warning:  require(../../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:20:57 UTC] PHP Fatal error:  require(): Failed opening required '../../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:20:58 UTC] PHP Warning:  require(../../php/con.php): failed to open stream: No such file or directory in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:20:58 UTC] PHP Fatal error:  require(): Failed opening required '../../php/con.php' (include_path='.:/opt/cpanel/ea-php74/root/usr/share/pear') in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 2
+[14-Apr-2021 18:22:07 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:22:07 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 37
+[14-Apr-2021 18:22:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:23:04 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:23:11 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:23:51 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:24:09 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:24:31 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:24:53 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:25:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:25:22 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:25:29 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:25:35 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:25:45 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:25:58 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:27:15 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:27:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:27:39 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:27:44 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:27:53 UTC] PHP Warning:  Illegal string offset 'uid' in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:28:28 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 10
+[14-Apr-2021 18:57:57 UTC] PHP Warning:  Use of undefined constant MYSQL_ASSOC - assumed 'MYSQL_ASSOC' (this will throw an Error in a future version of PHP) in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[14-Apr-2021 18:57:57 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 2 to be int, string given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[14-Apr-2021 18:59:28 UTC] PHP Warning:  mysqli_fetch_assoc() expects parameter 1 to be mysqli_result, int given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[14-Apr-2021 19:00:32 UTC] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, int given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[14-Apr-2021 19:01:09 UTC] PHP Warning:  mysqli_fetch_object() expects parameter 1 to be mysqli_result, int given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[14-Apr-2021 19:01:57 UTC] PHP Warning:  mysqli_fetch_row() expects parameter 1 to be mysqli_result, int given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[14-Apr-2021 19:02:36 UTC] PHP Warning:  mysqli_fetch_array() expects parameter 1 to be mysqli_result, int given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 16
+[15-Apr-2021 06:52:07 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 06:52:07 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 06:56:35 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 06:56:35 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 06:58:49 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 06:58:49 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 06:58:49 UTC] PHP Notice:  Undefined variable: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 38
+[15-Apr-2021 07:00:25 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 07:00:25 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 07:56:28 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:56:28 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:57:28 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:57:28 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:58:30 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 07:58:30 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:58:30 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 07:58:30 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:59:38 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 07:59:38 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 07:59:38 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 07:59:38 UTC] PHP Notice:  A non well formed numeric value encountered in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 29
+[15-Apr-2021 08:00:31 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:00:31 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:02:21 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 08:02:21 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:02:21 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 08:02:21 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:03:46 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 08:03:46 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:03:46 UTC] PHP Warning:  date_format() expects parameter 1 to be DateTimeInterface, string given in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 28
+[15-Apr-2021 08:03:46 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:04:14 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:04:14 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:05:08 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[15-Apr-2021 08:05:08 UTC] PHP Notice:  Undefined index: count in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 30
+[21-Apr-2021 14:12:22 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[24-Apr-2021 04:30:26 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[24-Apr-2021 04:30:26 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[24-Apr-2021 04:30:26 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[24-Apr-2021 04:30:26 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[24-Apr-2021 10:26:49 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:26:49 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:26:49 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[24-Apr-2021 10:26:49 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[24-Apr-2021 10:26:49 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 22
+[24-Apr-2021 10:26:49 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 23
+[24-Apr-2021 10:30:28 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:30:28 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:30:28 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:30:28 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:30:28 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:30:28 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:31:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:31:10 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:31:10 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:31:10 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:31:10 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:31:10 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:31:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:31:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:31:54 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:31:54 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:31:54 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:31:54 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:32:47 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:32:47 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:32:47 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:32:47 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:32:47 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:32:47 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:33:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:33:25 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:33:25 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:33:25 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:33:25 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:33:25 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:34:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:34:55 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:34:55 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:34:55 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:34:55 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:34:55 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:35:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:35:12 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:35:12 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:12 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:12 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:12 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:35:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:35:17 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:35:17 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:17 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:17 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:17 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:35:18 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 12
+[24-Apr-2021 10:35:18 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 13
+[24-Apr-2021 10:35:18 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:18 UTC] PHP Warning:  mysqli_query(): Empty query in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:18 UTC] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, bool given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 24
+[24-Apr-2021 10:35:18 UTC] PHP Notice:  Undefined variable: posts in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 25
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:40:36 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:46:08 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:46:54 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:47:04 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:47:16 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:48:38 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 39
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 40
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 10:48:48 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 42
+[24-Apr-2021 11:17:41 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:17:41 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:17:41 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:17:41 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:18:49 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:18:49 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:18:49 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:18:49 UTC] PHP Warning:  array_push() expects parameter 1 to be array, string given in /home/ajaytpin/public_html/joinme/User/app/api/getPosts.php on line 41
+[24-Apr-2021 11:36:55 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[24-Apr-2021 11:36:55 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[24-Apr-2021 11:36:55 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[24-Apr-2021 11:36:55 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[24-Apr-2021 18:30:43 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[24-Apr-2021 18:30:43 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[24-Apr-2021 18:30:43 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[24-Apr-2021 18:30:43 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[24-Apr-2021 18:35:45 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[24-Apr-2021 18:35:45 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[24-Apr-2021 18:35:45 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[24-Apr-2021 18:35:45 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[24-Apr-2021 18:36:24 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[24-Apr-2021 18:36:24 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[24-Apr-2021 18:36:24 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[24-Apr-2021 18:36:24 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[25-Apr-2021 18:51:01 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 24
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 25
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 26
+[26-Apr-2021 08:46:09 UTC] PHP Notice:  Undefined index: salary in /home/ajaytpin/public_html/joinme/User/app/api/jobrequests.php on line 27

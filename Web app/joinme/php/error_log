@@ -1,0 +1,16 @@
+[21-Apr-2021 14:55:57 UTC] PHP Notice:  Undefined variable: edate in /home/ajaytpin/public_html/joinme/php/postjob.php on line 33
+[21-Apr-2021 14:55:57 UTC] PHP Notice:  Undefined variable: edate in /home/ajaytpin/public_html/joinme/php/postjob.php on line 34
+[21-Apr-2021 15:05:46 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/php/postjob.php on line 33
+[21-Apr-2021 15:06:22 UTC] PHP Warning:  explode() expects at least 2 parameters, 1 given in /home/ajaytpin/public_html/joinme/php/postjob.php on line 33
+[21-Apr-2021 15:08:22 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/ajaytpin/public_html/joinme/php/postjob.php on line 33
+[21-Apr-2021 15:33:24 UTC] PHP Notice:  Undefined variable: insert in /home/ajaytpin/public_html/joinme/php/postjob.php on line 44
+[21-Apr-2021 15:33:24 UTC] PHP Notice:  Undefined variable: insert in /home/ajaytpin/public_html/joinme/php/postjob.php on line 44
+[21-Apr-2021 15:33:24 UTC] PHP Notice:  Undefined variable: insert in /home/ajaytpin/public_html/joinme/php/postjob.php on line 44
+[21-Apr-2021 15:33:24 UTC] PHP Notice:  Undefined variable: insert in /home/ajaytpin/public_html/joinme/php/postjob.php on line 42
+[25-Apr-2021 06:57:27 UTC] PHP Warning:  explode() expects parameter 2 to be string, array given in /home/ajaytpin/public_html/joinme/php/addutop.php on line 30
+[25-Apr-2021 06:58:17 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/php/addutop.php on line 30
+[25-Apr-2021 07:02:20 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ajaytpin/public_html/joinme/php/addutop.php on line 35
+[25-Apr-2021 07:03:35 UTC] PHP Fatal error:  Maximum execution time of 30 seconds exceeded in /home/ajaytpin/public_html/joinme/php/addutop.php on line 35
+[26-Apr-2021 07:40:03 UTC] PHP Notice:  Undefined offset: 1 in /home/ajaytpin/public_html/joinme/php/register.php on line 89
+[26-Apr-2021 07:45:00 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/php/register.php on line 89
+[26-Apr-2021 07:45:26 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/php/register.php on line 89

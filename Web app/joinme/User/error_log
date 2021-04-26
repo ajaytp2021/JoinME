@@ -1,0 +1,82 @@
+[03-Apr-2021 05:52:17 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'ajaytpin_joinme'@'localhost' to database 'ajaytpin_joinmePrj' in /home/ajaytpin/public_html/joinme/php/con.php on line 7
+[03-Apr-2021 05:54:53 UTC] PHP Warning:  mysqli_connect(): (HY000/1044): Access denied for user 'ajaytpin_joinme'@'localhost' to database 'ajaytpin_joinmePrj' in /home/ajaytpin/public_html/joinme/php/con.php on line 7
+[14-Apr-2021 03:33:22 UTC] PHP Notice:  Undefined variable: post in /home/ajaytpin/public_html/joinme/User/home.php on line 86
+[22-Apr-2021 13:48:46 UTC] PHP Notice:  Undefined variable: nr in /home/ajaytpin/public_html/joinme/User/home.php on line 123
+[22-Apr-2021 17:18:42 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:41:16 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:42:46 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:45:06 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:47:44 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:52:57 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:54:56 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:55:49 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[22-Apr-2021 17:58:08 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[22-Apr-2021 18:02:52 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[22-Apr-2021 18:02:52 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[22-Apr-2021 18:02:52 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[22-Apr-2021 18:02:52 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[22-Apr-2021 18:02:52 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[22-Apr-2021 18:04:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[22-Apr-2021 18:04:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[22-Apr-2021 18:04:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[22-Apr-2021 18:04:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[22-Apr-2021 18:04:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[22-Apr-2021 18:06:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[22-Apr-2021 18:06:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[22-Apr-2021 18:06:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[22-Apr-2021 18:06:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[22-Apr-2021 18:06:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[22-Apr-2021 18:08:06 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[22-Apr-2021 18:08:06 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[22-Apr-2021 18:08:06 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[22-Apr-2021 18:08:06 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[22-Apr-2021 18:08:06 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 93
+[23-Apr-2021 11:06:30 UTC] PHP Notice:  Undefined offset: 2 in /home/ajaytpin/public_html/joinme/User/addskills.php on line 100
+[24-Apr-2021 07:35:40 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 30
+[24-Apr-2021 07:36:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 30
+[24-Apr-2021 07:41:37 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[24-Apr-2021 07:45:43 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 27
+[24-Apr-2021 07:46:48 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[24-Apr-2021 07:47:34 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[24-Apr-2021 07:47:46 UTC] PHP Notice:  Undefined index: jTitle in /home/ajaytpin/public_html/joinme/User/requestedjobs.php on line 86
+[24-Apr-2021 07:47:46 UTC] PHP Notice:  Undefined index: Ulevel in /home/ajaytpin/public_html/joinme/User/requestedjobs.php on line 86
+[24-Apr-2021 07:47:46 UTC] PHP Notice:  Undefined index: NoUsers in /home/ajaytpin/public_html/joinme/User/requestedjobs.php on line 87
+[24-Apr-2021 07:55:54 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[24-Apr-2021 07:56:01 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[24-Apr-2021 07:57:18 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[25-Apr-2021 05:05:03 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[25-Apr-2021 05:05:04 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[25-Apr-2021 05:05:04 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[25-Apr-2021 05:05:04 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[25-Apr-2021 05:05:04 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[25-Apr-2021 05:07:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[25-Apr-2021 05:07:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[25-Apr-2021 05:07:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[25-Apr-2021 05:07:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[25-Apr-2021 05:07:38 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[25-Apr-2021 05:08:55 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[25-Apr-2021 05:08:55 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[25-Apr-2021 05:08:55 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[25-Apr-2021 05:08:55 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[25-Apr-2021 05:08:55 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[25-Apr-2021 05:10:03 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[25-Apr-2021 05:10:03 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[25-Apr-2021 05:10:03 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[25-Apr-2021 05:10:03 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[25-Apr-2021 05:10:03 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[25-Apr-2021 05:11:36 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[25-Apr-2021 05:11:36 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[25-Apr-2021 05:11:36 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[25-Apr-2021 05:11:36 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[25-Apr-2021 05:11:36 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
+[25-Apr-2021 18:28:13 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[25-Apr-2021 18:28:22 UTC] PHP Notice:  Array to string conversion in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[25-Apr-2021 18:37:02 UTC] PHP Notice:  Undefined variable: row in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[25-Apr-2021 18:37:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 28
+[25-Apr-2021 18:40:02 UTC] PHP Notice:  Undefined variable: row in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[25-Apr-2021 18:40:02 UTC] PHP Notice:  Trying to access array offset on value of type null in /home/ajaytpin/public_html/joinme/User/postdetailed.php on line 29
+[26-Apr-2021 09:39:40 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 88
+[26-Apr-2021 09:39:40 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 89
+[26-Apr-2021 09:39:40 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 90
+[26-Apr-2021 09:39:40 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 91
+[26-Apr-2021 09:39:40 UTC] PHP Warning:  Division by zero in /home/ajaytpin/public_html/joinme/User/companydetailedview.php on line 92
