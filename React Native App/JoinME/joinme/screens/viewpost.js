@@ -18,13 +18,15 @@ export default class ViewPost extends Component{
         this.state = {
             data: {},
             skills: [],
+            tasks: [],
             pid: 0,
             cid: 0,
             uid: null,
-            btntitle: 'Wait...',
+            btntitle: '',
             isreq: false,
             onprj: false, 
-            isAnim: true
+            isAnim: true,
+            marginBottom: {marginBottom : 0}
         }
     }
 
@@ -33,7 +35,7 @@ export default class ViewPost extends Component{
         console.log('second');
         this.loadingButton.showLoading(true);
         const {data, uid} = this.props.route.params;
-        await this.setState({data: data[0], skills: data[0].skills, pid: data[0].pid, cid: data[0].cid, uid: uid});
+        await this.setState({data: data[0], skills: data[0].skills.skill, tasks: data[0].skills.tasks, pid: data[0].pid, cid: data[0].cid, uid: uid});
         LogBox.ignoreAllLogs(true);
         this.reqCheck();
     }
@@ -56,10 +58,10 @@ export default class ViewPost extends Component{
         .then(response => response.json())
         .then(async (json) => {
             if(json.status === 200){
-                if(json.isReq){
-                    await this.setState({btntitle: 'Already requested'}) 
-                }else if(json.onPrj){
+                if(json.onPrj){
                     await this.setState({btntitle: 'Already involved in a project'})
+                }else if(json.isReq){
+                    await this.setState({btntitle: 'Already requested'}) 
                 }else{
                     await this.setState({btntitle: 'Request Job'})
                 }
@@ -76,7 +78,7 @@ export default class ViewPost extends Component{
             Alert.alert('Information', 'Do job request');
         }
     }
-
+temparr = [];
     render(){
         console.log(this.state.data);        
 
@@ -93,15 +95,36 @@ export default class ViewPost extends Component{
                 <Text style={[styles.otherText, {color: 'gray', fontWeight: 'bold'}]}>Developers needed</Text>
                   <ScrollView><View style={{flex: 1, flexDirection: 'row'}}>
                       
-                  {this.state.skills.map((each, index) => {
+                  { this.temparr = [],
+                  this.state.skills.map((each, index) => {
+                      if(!this.temparr.includes(each)){
+                        this.temparr.push(each);
                     return (<Text style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={index}>{each}</Text>)
+                      }
                   })}
                   </View></ScrollView>
                 </View>
                 </View>
 
-
                 <View style={[styles.innerView, styles.card]}>
+                <Text style={styles.desc}>Tasks</Text>
+
+                    {
+                        this.temparr = [],
+                        this.state.skills.map((_each, _index) => {
+                            if(!this.temparr.includes(_each)){
+                                this.temparr.push(_each);
+                                console.log(_each)
+                            return <View><Text style={styles.section}>{_each}</Text><Text style={styles.item}>&#9679; {this.state.tasks[_index]}</Text></View>
+                            }else{
+                                return <View><Text style={styles.item}>&#9679; {this.state.tasks[_index]}</Text></View>
+                            }
+                        })
+                    }
+                    
+                    
+                </View>
+                <View style={[styles.innerView, styles.card, {...this.state.marginBottom}]}>
                     <Text style={styles.desctxt}>About</Text>
                     <Text style={styles.desc}>{this.state.data.desc}</Text>
                 </View>
@@ -109,7 +132,10 @@ export default class ViewPost extends Component{
 
                 
             </ScrollView>
-            <View style={styles.loading}>
+            <View style={styles.loading} onLayout={async (event) => {
+                const {x, y, width, height} = event.nativeEvent.layout;
+                await this.setState({marginBottom: {marginBottom: height}})
+            }}>
                     <AnimateLoadingButton
                         ref={c => (this.loadingButton = c)}
                         width={width}
@@ -170,11 +196,22 @@ const styles = StyleSheet.create({
         width: width,
         alignItems: 'center',
         flex: 1,
-  justifyContent: 'flex-end'
+  justifyContent: 'flex-end',
     },
     card: {
         backgroundColor: 'white',
         marginBottom: 10,
+    },
+    section: {
+        textAlign: 'left',
+        padding: 5,
+        backgroundColor: 'green',
+        fontWeight: 'bold'
+    },
+    item: {
+        textAlign: 'left',
+        padding: 5,
+        backgroundColor: 'yellow'
     }
 
 });

@@ -64,7 +64,7 @@ export default class MyJobRequests extends Component {
   };
 
   renderItem = ({item, index}) => (
-    <View style={{backgroundColor: 'white'}}>
+    <View style={{backgroundColor: 'white'}} key={index}>
       <View style={{padding: 15}}>
         <View style={{flexDirection: 'column'}}>
           <Text style={{fontSize: 17, marginBottom: 10, fontWeight: 'bold'}}>

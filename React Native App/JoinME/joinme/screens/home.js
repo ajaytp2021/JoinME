@@ -16,6 +16,7 @@ import { SafeAreaView } from 'react-native';
 import { PRIMARY_COLOR } from '../assets/colors/colors';
 import { ScrollView } from 'react-native';
 import Ripple from 'react-native-material-ripple';
+import { TouchableOpacity } from 'react-native';
 
 
 export default class Home extends Component{
@@ -33,11 +34,14 @@ export default class Home extends Component{
             currentCount: 0,
             minCount: 0,
             today: null,
-            pdate: null
-        }
+            pdate: null,
+            
+            
+          }
         this.handleLoadMore = this.handleLoadMore.bind(this);
     }
 
+     temparr=new Array()
   
     
     async componentDidMount(){
@@ -47,7 +51,6 @@ export default class Home extends Component{
         this.setState({isVisible: true});
     }
         await AsyncStorage.getItem(STORAGE_KEY).then((value) => {
-          console.log(value);
           this.setState({uid: value})
             this.getAllPosts(value, this.state.page);
         });
@@ -138,18 +141,12 @@ export default class Home extends Component{
       }
 
       handleLoadMore = async () => {
-        
-        console.log(this.state.currentCount)
-        console.log(this.state.minCount)
-        console.log(this.state.isFooterLoading)
           if(this.state.currentCount == this.state.minCount && this.state.totalCount != this.state.currentCount && !this.state.isFooterLoading){
-        console.log('isFooterLoaded');
         await this.setState({isFooterLoading: true});
-        console.log(this.state.isFooterLoading)
             this.getAllPosts(this.state.uid, this.state.page)
     }
       }
-
+      
       renderItem = ({item, index}) => (
             <Ripple onPress={() => {
             this.props.navigation.navigate('ViewPost', {data: [this.state.datasource[index]], uid: this.state.uid});
@@ -161,9 +158,16 @@ export default class Home extends Component{
                   </View>
                   <Text style={{color: 'gray', fontWeight: 'bold', marginBottom: 5}}>Developers needed</Text>
                   <ScrollView><View style={{flex: 1, flexDirection: 'row'}}>
-                  {item.skills.map((each, index) => {
-                    return (<Text style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={index}>{each}</Text>)
-                  })}
+                  {
+                  this.temparr=[],
+                  item.skills.skill.map((_eachItem,_eachIndex)=>{
+                    if(!this.temparr.includes(_eachItem)){
+                      this.temparr.push(_eachItem);
+                      // console.log("_eachItem: ",_eachItem);
+                      return <TouchableOpacity style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={_eachIndex} onPress={console.log(_eachItem)}><Text>{_eachItem}</Text></TouchableOpacity>
+                    }
+                  })
+                  }
                   </View></ScrollView>
                   <View style={{flexDirection: 'row', marginTop: 10, marginBottom: 10, justifyContent: 'space-between'}}>
                   <View style={{flexDirection: 'column', marginTop: 10, marginBottom: 10, width: '40%', borderWidth: 1, borderColor: '#eee', borderRadius: 5, justifyContent: 'center', paddingTop: 10, paddingBottom: 10}}>

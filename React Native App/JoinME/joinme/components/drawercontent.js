@@ -27,13 +27,16 @@ export default function DrawerContent({navigation, props}){
                 )} label={'Home'} onPress={() => {navigation.navigate('Home')}} />
                 <DrawerItem icon={({color, size}) => (
                     <Ionicons name={'briefcase-outline'} color={color} size={size} />
-                )} label={'My Current Work'} onPress={() => {navigation.navigate('MyCurrentWork')}} />
+                )} label={'My Current Work'} onPress={() => {navigation.navigate('My Current Work')}} />
                 <DrawerItem icon={({color, size}) => (
                     <Ionicons name={'document-text-outline'} color={color} size={size} />
-                )} label={'My Job Requests'} onPress={() => {navigation.navigate('MyJobRequests')}} />
+                )} label={'My Job Requests'} onPress={() => {navigation.navigate('My Job Requests')}} />
                 <DrawerItem icon={({color, size}) => (
-                    <Ionicons name={'pie-chart-outline'} color={color} size={size} />
-                )} label={'Generate Report'} onPress={() => {navigation.navigate('MyJobRequests')}} />
+                    <Ionicons name={'videocam-outline'} color={color} size={size} />
+                )} label={'Meeting Schedule'} onPress={() => {navigation.navigate('Meeting schedule')}} />
+                <DrawerItem icon={({color, size}) => (
+                    <Ionicons name={'videocam-outline'} color={color} size={size} />
+                )} label={'Payments'} onPress={() => {navigation.navigate('Payments')}} />
             </Drawer.Section>
             </DrawerContentScrollView>
             <Drawer.Section>
