@@ -3,7 +3,7 @@ import {View, Text, StyleSheet, TouchableOpacity} from 'react-native';
 
 export default function Mybutton({text, onPress, btncolor}){
     return(
-        <TouchableOpacity onPress={onPress}>
+        <TouchableOpacity onPress={onPress} >
             <View style={{...styles.button, backgroundColor: btncolor}}>
                 <Text style={styles.text}>
                     {text}

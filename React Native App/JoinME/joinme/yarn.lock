@@ -703,10 +703,10 @@
   resolved "https://registry.yarnpkg.com/@bcoe/v8-coverage/-/v8-coverage-0.2.3.tgz#75a2e8b51cb758a7553d6804a5932d7aace75c39"
   integrity sha512-0hYQ8SB4Db5zvZB4axdMHGwEaQjkZzFjQiN9LVYvIFB2nSUHW9tYpxWriPrWDASIxiaXax83REcLxuSdnGPZtw==
 
-"@callstack/react-theme-provider@^3.0.5":
-  version "3.0.5"
-  resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.5.tgz#a173e455e9603c9c45357a3b6ace1273086527ca"
-  integrity sha512-Iec+ybWN0FvNj87sD3oWo/49edGUP0UOSdMnzCJEFJIDYr992ECIuOV89burAAh2/ibPCxgLiK6dmgv2mO/8Tg==
+"@callstack/react-theme-provider@^3.0.6":
+  version "3.0.6"
+  resolved "https://registry.yarnpkg.com/@callstack/react-theme-provider/-/react-theme-provider-3.0.6.tgz#7dac483037e27e28676bdf1431ba87b88f21118f"
+  integrity sha512-wwKMXfmklfogpalNZT0W+jh76BIquiYUiQHOaPmt/PCyCEP/E6rP+e7Uie6mBZrfkea9WJYJ+mus6r+45JAEhg==
   dependencies:
     deepmerge "^3.2.0"
     hoist-non-react-statics "^3.3.0"
@@ -5186,7 +5186,7 @@ lodash.throttle@^4.1.1:
   resolved "https://registry.yarnpkg.com/lodash.throttle/-/lodash.throttle-4.1.1.tgz#c23e91b710242ac70c37f1e1cda9274cc39bf2f4"
   integrity sha1-wj6RtxAkKscMN/HhzaknTMOb8vQ=
 
-lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
+lodash@4.17.21, lodash@^4.0.0, lodash@^4.17.10, lodash@^4.17.14, lodash@^4.17.15, lodash@^4.17.19:
   version "4.17.21"
   resolved "https://registry.yarnpkg.com/lodash/-/lodash-4.17.21.tgz#679591c564c3bffaae8454cf0b3df370c3d6911c"
   integrity sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==
@@ -6542,6 +6542,13 @@ react-native-drawer@2.5.1:
     prop-types "^15.5.8"
     tween-functions "^1.0.1"
 
+react-native-dropdown-picker@^5.1.19:
+  version "5.1.19"
+  resolved "https://registry.yarnpkg.com/react-native-dropdown-picker/-/react-native-dropdown-picker-5.1.19.tgz#591a70b3031f7b013eafb934cebb10d8e8558a44"
+  integrity sha512-OAraXBiq3uaelzQefXvPDtuCfAwD4HEtq9h39a9dVcudtsi7yNyTe2zP/V9wdFVRodcMUVI5woNIcrDeg4pCWw==
+  dependencies:
+    react-native-gesture-handler "*"
+
 react-native-easy-grid@0.2.2:
   version "0.2.2"
   resolved "https://registry.yarnpkg.com/react-native-easy-grid/-/react-native-easy-grid-0.2.2.tgz#f0be33620be1ebe2d2295918eb58b0a27e8272ab"
@@ -6563,7 +6570,7 @@ react-native-elements@^3.3.2:
     react-native-ratings "^7.3.0"
     react-native-size-matters "^0.3.1"
 
-react-native-gesture-handler@^1.10.3:
+react-native-gesture-handler@*, react-native-gesture-handler@^1.10.3:
   version "1.10.3"
   resolved "https://registry.yarnpkg.com/react-native-gesture-handler/-/react-native-gesture-handler-1.10.3.tgz#942bbf2963bbf49fa79593600ee9d7b5dab3cfc0"
   integrity sha512-cBGMi1IEsIVMgoox4RvMx7V2r6bNKw0uR1Mu1o7NbuHS6BRSVLq0dP34l2ecnPlC+jpWd3le6Yg1nrdCjby2Mw==
@@ -6605,12 +6612,17 @@ react-native-multistep-forms@^0.0.1:
   dependencies:
     react-native-animatable "^1.3.2"
 
-react-native-paper@^4.7.2:
-  version "4.7.2"
-  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-4.7.2.tgz#a40d1da87af5b030d45b525313cd703d490876ff"
-  integrity sha512-MOcDWjBOaknEpQgdm4fIOsRFIt4PJlMCgWlLk4kIe8Wv99/M0JIoxWABkAf4Lj5BuJgXjXdwr0DA/lhGY1BRoQ==
+react-native-paper-dates@^0.4.6:
+  version "0.4.6"
+  resolved "https://registry.yarnpkg.com/react-native-paper-dates/-/react-native-paper-dates-0.4.6.tgz#e81006528694b3796bdbfd7202bc3ebb0759f2d1"
+  integrity sha512-hEjV040SgKpbcN3fq8gQyycGHKCYJmMocCM4Me1ovQrMTRG5Rwez7j1PnCeil/iY66HRn6cSJ713z7qrTHc3Ow==
+
+react-native-paper@^4.9.1:
+  version "4.9.1"
+  resolved "https://registry.yarnpkg.com/react-native-paper/-/react-native-paper-4.9.1.tgz#9b2aadcb1bd48ff6825641df60821e20e0cc8276"
+  integrity sha512-vGgNvQE/GlNSjwJw+1LW0yoULTh7enxln16bYfOoI9Xiz1NOKxhfyQN0/LlZn7JFhRdbXW+3+6yMBJ50Emt+ng==
   dependencies:
-    "@callstack/react-theme-provider" "^3.0.5"
+    "@callstack/react-theme-provider" "^3.0.6"
     color "^3.1.2"
     react-native-iphone-x-helper "^1.3.1"
 
@@ -6618,6 +6630,20 @@ react-native-progress-dialog@^0.0.5:
   version "0.0.5"
   resolved "https://registry.yarnpkg.com/react-native-progress-dialog/-/react-native-progress-dialog-0.0.5.tgz#3a6b90255fbe205fdc401d8ffdf8befc4422c6de"
   integrity sha512-gpo+t9jF52l6rHyDoZqW1DYBL7MiUg6ROCJhTV1vql5ngb+IT4dy0ccd3sqYl8/AoC05QpFFcfh97HBBQ7RxUA==
+
+react-native-radio-button-group@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.yarnpkg.com/react-native-radio-button-group/-/react-native-radio-button-group-1.0.3.tgz#62a1c37b73adb6d3eb2bd819bc7749041cc94052"
+  integrity sha512-4zLOHi0sLjBOTBG+t+Rmx3syvS2P5AccRsnMljJn3kBLMm6vbIdxhYcmxb1IFikk1B/GnJTwdsHMJop8AxX4/A==
+  dependencies:
+    prop-types "^15.7.2"
+
+react-native-radio-buttons-group@^2.2.4:
+  version "2.2.4"
+  resolved "https://registry.yarnpkg.com/react-native-radio-buttons-group/-/react-native-radio-buttons-group-2.2.4.tgz#d82bd6a12eeec7d6b4bbcf1082424c5e764c778e"
+  integrity sha512-YibKuSmfBfhflftzRHZva7lM9l7Senuc4JerDJilce1KcVcjSE2VqepLwYcu40wdsVv/6J6JHfNqHIJDBjPEPA==
+  dependencies:
+    lodash "4.17.21"
 
 react-native-ratings@^7.3.0:
   version "7.5.0"

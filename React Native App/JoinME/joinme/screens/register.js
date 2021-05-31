@@ -1,11 +1,17 @@
 import React from 'react'
 import {Button, Text, View, StyleSheet, Dimensions, Image} from 'react-native'
 import { StatusBar } from 'react-native';
-import Mybutton from '../components/mybutton';
-import MybuttonOutlined from '../components/mybuttonoutlined';
-import Linetextline from '../components/linetextline';
-import { TextInput } from 'react-native-paper';
+import { TextInput, RadioButton } from 'react-native-paper';
+import  { Dropdown }  from  'react-native-material-dropdown';
 import { ScrollView } from 'react-native';
+import RegSteps from '../components/RegSteps';
+import DropDownPicker from 'react-native-dropdown-picker';
+import RadioGroup from 'react-native-radio-button-group';
+import { DateTimePickerModal } from 'react-native-paper-datetimepicker';
+import { TouchableWithoutFeedback } from 'react-native';
+import { TouchableOpacity } from 'react-native';
+import { DatePickerModal } from 'react-native-paper-dates';
+import Moment from 'moment'
 
 export default class Register extends React.Component{
   constructor(props){
@@ -18,9 +24,21 @@ export default class Register extends React.Component{
       cpass: '',
       name: '',
       gender: '',
-      dob: ''
+      dob: '',
+      address: '',
+      pincode: '',
+      district: '',
+      state: '',
+      country: '',
+      email: '',
+      phone: '',
+      genderActiveId: 0,
+      contentViewHeight: 0,
+      datepicker: false
     };
   }
+
+  
 
     backToLogin = () => {
         this.props.navigation.goBack(null);
@@ -30,6 +48,15 @@ export default class Register extends React.Component{
   async componentDidMount() {
     this.setState({ isReady: true });
   }
+
+onDismiss = () => {
+  this.setState({datepicker: false})
+}
+
+onChange = async (v) => {
+  await this.setState({datepicker: false, dob: Moment(v.date).format('YYYY-MM-DD')})
+}
+
   
   render() {
     if (!this.state.isReady) {
@@ -39,6 +66,14 @@ export default class Register extends React.Component{
         </View>
       );
     }
+    let genderList = [
+      { id: 1, label: 'Male' },
+      { id: 2, label: 'Female' },
+      { id: 3, label: 'Other' },
+      ]
+      const date = new Date();
+      
+      
     return (
       <View style={styles.rootView}>
         <StatusBar translucent backgroundColor="transparent" />
@@ -49,61 +84,187 @@ export default class Register extends React.Component{
             <Text style={[styles.titlesection, styles.txtshadow]}>JoinME</Text>
           </View>
         </View>
-        <View style={styles.btm}>
+        <View style={styles.btm} onLayout={async (event) => {
+          const {x, y, width, height} = event.nativeEvent.layout;
+          await this.setState({contentViewHeight: height})
+        }}>
         <View style={styles.innerbtm}>
-          <Text style={styles.logintitlesection}>Register</Text>
           <ScrollView>
-    <TextInput
-      label="Username"
-      placeholder="Enter username here"
-      mode="outlined"
-      secureTextEntry={false}
-      style={styles.inputalign}
-      onChangeText={(uname)=>this.setState({uname})}
-    />
-    <TextInput
-      label="Password"
-      placeholder="Enter password here"
-      mode="outlined"
-      secureTextEntry={true}
-      style={styles.inputalign}
-    />
-    <TextInput
-      label="Confirm Password"
-      placeholder="Enter confirm password here"
-      mode="outlined"
-      secureTextEntry={true}
-      style={styles.inputalign}
-    />
-    <TextInput
-      label="Name"
-      placeholder="Enter your name here"
-      mode="outlined"
-      style={styles.inputalign}
-      color={'#fff'}
-    />
-    <TextInput
-      label="Gender"
-      mode="outlined"
-      style={styles.inputalign}
-      color={'#fff'}
-    />
-    <TextInput
-      label="DOB"
-      placeholder="Enter your DOB here"
-      mode="outlined"
-      style={styles.inputalign}
-      color={'#fff'}
-    />
+            <RegSteps data={this.state}>
+              <RegSteps.Step>
+                <View>
+          <Text style={styles.logintitlesection}>Personal information</Text>
+                <TextInput
+                  label="Username"
+                  placeholder="Enter username here"
+                  mode="outlined"
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.uname}
+                  onChangeText={(uname)=>this.setState({uname: uname})}
+                />
+                <TextInput
+                  label="Password"
+                  placeholder="Enter password here"
+                  mode="outlined"
+                  secureTextEntry={true}
+                  style={styles.inputalign}
+                  value={this.state.pass}
+                  onChangeText={(pass)=>this.setState({pass: pass})}
+                />
+                <TextInput
+                  label="Confirm Password"
+                  placeholder="Enter confirm password here"
+                  mode="outlined"
+                  secureTextEntry={true}
+                  style={styles.inputalign}
+                  value={this.state.cpass}
+                  onChangeText={(cpass)=>this.setState({cpass: cpass})}
+                />
+                <TextInput
+                  label="Name"
+                  placeholder="Enter your name here"
+                  mode="outlined"
+                  style={styles.inputalign}
+                  color={'#fff'}
+                  value={this.state.name}
+                  onChangeText={(name)=>this.setState({name: name})}
+                />
+                <View style={[styles.inputalign, {borderWidth: 1, borderColor: 'black', padding: 10}]}>
+                  <Text style={{color: 'gray', marginBottom: 10}}>Gender</Text>
+                <RadioGroup
+                horizontal
+            options={genderList}
+            onChange={(option) => {
+              this.setState({gender: option.label, genderActiveId: option.id})
+            }}
+            activeButtonId={this.state.genderActiveId}
+            circleStyle={{ fillColor: 'gray', borderColor: 'gray' }}
+        />
+                 </View>
+                 <DatePickerModal
+        visible={this.state.datepicker}
+        onDismiss={this.onDismiss}
+        date={date}
+        mode="single"
+        onConfirm={this.onChange}
+        label="Pick A Date"
+      />
+      <TouchableOpacity onPress={() => {
+        this.setState({datepicker: true})
+      }}>
+                <TextInput
+                  label="DOB"
+                  placeholder="Enter your DOB here"
+                  mode="outlined"
+                  style={styles.inputalign}
+                  color={'#fff'}
+                  value={this.state.dob}
+                  editable={false}
+                  onChangeText={(dob)=>this.setState({dob: dob})}
+                /></TouchableOpacity>
+                            </View>
+                          </RegSteps.Step>
 
-    <Mybutton text="Sign Up" onPress={this.registerClick} btncolor={'#4827FF'} />
+              <RegSteps.Step>
+                            <View>
+          <Text style={styles.logintitlesection}>Address</Text>
+                            <TextInput
+                  label="Address"
+                  placeholder="Enter address here"
+                  mode="outlined"
+                  secureTextEntry={false}
+                  style={[styles.inputalign]}
+                  value={this.state.address}
+                  onChangeText={(address)=>this.setState({address: address})}
+                />
+                <TextInput
+                  label="Pincode"
+                  placeholder="Enter pincode here"
+                  mode="outlined"
+                  keyboardType={'phone-pad'}
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.pincode}
+                  onChangeText={(pincode)=>this.setState({pincode: pincode})}
+                />
+                <TextInput
+                  label="District"
+                  placeholder="Enter district here"
+                  mode="outlined"
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.district}
+                  onChangeText={(district)=>this.setState({district: district})}
+                />
+                <TextInput
+                  label="State"
+                  placeholder="Enter state here"
+                  mode="outlined"
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.state}
+                  onChangeText={(state)=>this.setState({state: state})}
+                />
+                <TextInput
+                  label="Country"
+                  placeholder="Enter countr here"
+                  mode="outlined"
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.country}
+                  onChangeText={(country)=>this.setState({country: country})}
+                />
+                </View>
+                
+              </RegSteps.Step>
+
+              <RegSteps.Step>
+                            <View>
+          <Text style={styles.logintitlesection}>Contact details</Text>
+                            <TextInput
+                  label="Email"
+                  placeholder="Enter email here"
+                  mode="outlined"
+                  keyboardType={'email-address'}
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.email}
+                  onChangeText={(email)=>this.setState({email: email})}
+                />
+                <TextInput
+                  label="Phone number"
+                  keyboardType={'phone-pad'}
+                  placeholder="Enter phone number here"
+                  mode="outlined"
+                  maxLength={10}
+                  secureTextEntry={false}
+                  style={styles.inputalign}
+                  value={this.state.phone}
+                  onChangeText={(phone)=>this.setState({phone: phone})}
+                />
+                </View>
+              </RegSteps.Step>
+
+              <RegSteps.Step>
+                            <View>
+                              <ScrollView>
+          <Text style={styles.logintitlesection}>About yourself</Text>
+                            <TextInput
+                  label="About yourself"
+                  placeholder="Enter here"
+                  mode="outlined"
+                  secureTextEntry={false}
+                  style={[styles.inputalign, {height: this.state.contentViewHeight / 2}]}
+                  value={this.state.about}
+                  onChangeText={(about)=>this.setState({about: about})}
+                />
+                </ScrollView>
+                </View>
+              </RegSteps.Step>
+            </RegSteps>
     </ScrollView>
 
-
-    {/* <View style={{marginTop: 20}}>
-    <Linetextline text={'OR'} marginStart={20} marginEnd={20} />
-    </View> */}
-    {/* <MybuttonOutlined text="Sign In"  btncolor={'#4827FF'} onPress={this.backToLogin} /> */}
 
     
         </View>
