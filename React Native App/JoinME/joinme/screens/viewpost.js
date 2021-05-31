@@ -108,6 +108,7 @@ temparr = [];
 
                 <View style={[styles.innerView, styles.card]}>
                 <Text style={styles.desc}>Tasks</Text>
+                <View style={[styles.borderTasks]}>
 
                     {
                         this.temparr = [],
@@ -121,7 +122,7 @@ temparr = [];
                             }
                         })
                     }
-                    
+                    </View>
                     
                 </View>
                 <View style={[styles.innerView, styles.card, {...this.state.marginBottom}]}>
@@ -205,13 +206,18 @@ const styles = StyleSheet.create({
     section: {
         textAlign: 'left',
         padding: 5,
-        backgroundColor: 'green',
-        fontWeight: 'bold'
+        backgroundColor: PRIMARY_COLOR,
+        fontWeight: 'bold',
+        color: 'white'
     },
     item: {
         textAlign: 'left',
         padding: 5,
-        backgroundColor: 'yellow'
+        backgroundColor: 'white'
+    },
+    borderTasks: {
+        borderColor: PRIMARY_COLOR,
+        borderWidth: 1
     }
 
 });

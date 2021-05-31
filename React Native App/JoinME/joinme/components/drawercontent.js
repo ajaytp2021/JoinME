@@ -35,7 +35,7 @@ export default function DrawerContent({navigation, props}){
                     <Ionicons name={'videocam-outline'} color={color} size={size} />
                 )} label={'Meeting Schedule'} onPress={() => {navigation.navigate('Meeting schedule')}} />
                 <DrawerItem icon={({color, size}) => (
-                    <Ionicons name={'videocam-outline'} color={color} size={size} />
+                    <Ionicons name={'cash-outline'} color={color} size={size} />
                 )} label={'Payments'} onPress={() => {navigation.navigate('Payments')}} />
             </Drawer.Section>
             </DrawerContentScrollView>

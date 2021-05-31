@@ -164,7 +164,7 @@ export default class Home extends Component{
                     if(!this.temparr.includes(_eachItem)){
                       this.temparr.push(_eachItem);
                       // console.log("_eachItem: ",_eachItem);
-                      return <TouchableOpacity style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={_eachIndex} onPress={console.log(_eachItem)}><Text>{_eachItem}</Text></TouchableOpacity>
+                      return <TouchableOpacity style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={_eachIndex} onPress={console.log(_eachItem)}><Text style={{color: 'white'}}>{_eachItem}</Text></TouchableOpacity>
                     }
                   })
                   }
