@@ -24,8 +24,6 @@ export default function Profile({navigation}){
                         navigation.navigate('Login');
 
                     })
-            }else{
-                console.log('No value to clear')
             }
         })
     }

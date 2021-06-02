@@ -1,6 +1,6 @@
 import React from 'react'
 import {Button, Text, View, StyleSheet, Dimensions, Image} from 'react-native'
-import { StatusBar } from 'react-native';
+import { StatusBar, Keyboard } from 'react-native';
 import { TextInput, RadioButton } from 'react-native-paper';
 import  { Dropdown }  from  'react-native-material-dropdown';
 import { ScrollView } from 'react-native';
@@ -23,7 +23,7 @@ export default class Register extends React.Component{
       pass: '',
       cpass: '',
       name: '',
-      gender: '',
+      gender: 'male',
       dob: '',
       address: '',
       pincode: '',
@@ -32,7 +32,7 @@ export default class Register extends React.Component{
       country: '',
       email: '',
       phone: '',
-      genderActiveId: 0,
+      genderActiveId: 1,
       contentViewHeight: 0,
       datepicker: false
     };
@@ -48,6 +48,7 @@ export default class Register extends React.Component{
   async componentDidMount() {
     this.setState({ isReady: true });
   }
+
 
 onDismiss = () => {
   this.setState({datepicker: false})
@@ -90,10 +91,10 @@ onChange = async (v) => {
         }}>
         <View style={styles.innerbtm}>
           <ScrollView>
-            <RegSteps data={this.state}>
+            <RegSteps data={this.state} navigation={this.props.navigation}>
               <RegSteps.Step>
                 <View>
-          <Text style={styles.logintitlesection}>Personal information</Text>
+          <Text style={styles.logintitlesection}>Login information</Text>
                 <TextInput
                   label="Username"
                   placeholder="Enter username here"
@@ -101,7 +102,7 @@ onChange = async (v) => {
                   secureTextEntry={false}
                   style={styles.inputalign}
                   value={this.state.uname}
-                  onChangeText={(uname)=>this.setState({uname: uname})}
+                  onChangeText={(uname)=>{this.setState({uname: uname}) }}
                 />
                 <TextInput
                   label="Password"
@@ -120,6 +121,7 @@ onChange = async (v) => {
                   style={styles.inputalign}
                   value={this.state.cpass}
                   onChangeText={(cpass)=>this.setState({cpass: cpass})}
+                  error={this.state.pass != this.state.cpass ? true : false}
                 />
                 <TextInput
                   label="Name"

@@ -82,12 +82,6 @@ export default class MyJobRequests extends Component {
         </View>
 
         <View style={{display: 'flex'}}>
-          {item.count == 0 ? (
-            <TouchableWithoutFeedback
-              style={{width:'100%'}}>
-              <Ionicons name={'trash'} size={24} color={'gray'} style={{textAlign:'right',marginBottom:10}} />
-            </TouchableWithoutFeedback>
-          ) : null}
           <View style={{right: 0, width: '100%'}}>
             <View
               style={{

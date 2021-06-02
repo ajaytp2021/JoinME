@@ -11,12 +11,14 @@ import MoreLessText from '../components/morelesstext'
 import Loading from '../components/loading'
 import { TouchableWithoutFeedback } from 'react-native';
 import moment from 'moment';
-import { Alert } from 'react-native';
+import { Alert, Animated, Easing } from 'react-native';
 import { SafeAreaView } from 'react-native';
 import { PRIMARY_COLOR } from '../assets/colors/colors';
 import { ScrollView } from 'react-native';
 import Ripple from 'react-native-material-ripple';
 import { TouchableOpacity } from 'react-native';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import { Spinner } from 'native-base';
 
 
 export default class Home extends Component{
@@ -34,14 +36,19 @@ export default class Home extends Component{
             currentCount: 0,
             minCount: 0,
             today: null,
-            pdate: null,
+            pdate: null
             
             
           }
         this.handleLoadMore = this.handleLoadMore.bind(this);
+        
     }
 
+    
+
      temparr=new Array()
+     
+     
   
     
     async componentDidMount(){
@@ -82,6 +89,9 @@ export default class Home extends Component{
             })
       .then(response => response.json())
       .then((json) => {
+        if(this.state.isRefreshing){
+          this.setState({datasource: []})
+        }
           if(json.status === 200){
           this.setState({isVisible: false,
              page: json.page, 
@@ -99,7 +109,8 @@ export default class Home extends Component{
             this.setState({isVisible: false,
               isRefreshing: false,
               isVisible: false,
-              isFooterLoading: false
+              isFooterLoading: false,
+              datasource: []
              })
           }
 
@@ -108,6 +119,8 @@ export default class Home extends Component{
         // })
 
       })
+      // Next, interpolate beginning and end values (in this case 0 and 1)
+
       }
 
       _renderTruncatedFooter = (handlePress) => {
@@ -146,6 +159,9 @@ export default class Home extends Component{
             this.getAllPosts(this.state.uid, this.state.page)
     }
       }
+       
+
+      
       
       renderItem = ({item, index}) => (
             <Ripple onPress={() => {
@@ -187,14 +203,15 @@ export default class Home extends Component{
           </Ripple>
       )
     render(){
-        if(this.state.totalCount == 0 && this.state.currentCount == 0){
-            return(
-              !this.state.isVisible ? (
-                <View>
-                    <Text>No data found</Text>
-                </View> ) : (<Loading isVisible={this.state.isVisible} />)
-            );
-        }
+      
+        
+        if(this.state.isVisible){
+          return (
+              <Loading isVisible={this.state.isVisible} />
+          )
+      }
+
+      if(this.state.datasource != 0){
         return(
             <SafeAreaView style={styles.root}>
                 <StatusBar animated={true} />
@@ -204,6 +221,7 @@ export default class Home extends Component{
                 keyExtractor={(item, index) => index}
                 refreshing={this.state.isRefreshing}
                 onRefresh={async () => {
+                  
                         await this.setState({ isRefreshing: true });
                         this.getAllPosts(this.state.uid, 0)
                 }}
@@ -211,9 +229,23 @@ export default class Home extends Component{
                 onEndReachedThreshold={0}
                 ListFooterComponent={this.renderFooter}
                 showsVerticalScrollIndicator={false} />
-                <ProgressDialog visible={this.state.isVisible} />
             </SafeAreaView>
         );
+              }else{
+                if(this.state.totalCount == 0 && this.state.currentCount == 0 || this.state.datasource.length == 0){
+                  return(
+                    !this.state.isVisible ? (
+                      <View style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
+                          <Ionicons name={'file-tray-outline'} color={'gray'} size={30} />
+                          <Text style={{ fontWeight: 'bold', color: 'gray'}}>No data found</Text>
+                          <TouchableOpacity style={{backgroundColor: PRIMARY_COLOR, padding: 10, borderRadius: 500, marginTop: 10, flexDirection: 'row'}} onPress={async () => {
+                            await this.setState({ isVisible: true });
+                            this.getAllPosts(this.state.uid, 0)
+                          }}><Text>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
+                      </View> ) : (<Loading isVisible={this.state.isVisible} />)
+                  );
+              }
+              }
     }
 }
 
