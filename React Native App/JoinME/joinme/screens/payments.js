@@ -67,7 +67,8 @@ export default class Payments extends Component {
                     <Text style={{ fontWeight: 'bold', color: 'gray'}}>No payments</Text>
                     <TouchableOpacity style={{backgroundColor: PRIMARY_COLOR, padding: 10, borderRadius: 500, marginTop: 10, flexDirection: 'row'}} onPress={async () => {
                       await this.setState({ isRefreshing: true });
-                      this.getAllPayments(this.state.uid)
+                      const uid = this.state.uid;
+                      this.getAllPayments({uid});
                     }}><Text>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
                 </View>
             )

@@ -11,9 +11,8 @@ import { NavigationActions } from 'react-navigation';
 
 
 export default function DrawerContent({navigation, props}){
-
     return(
-        <View style={styles.rootview}>
+        <View style={styles.rootview} >
             <DrawerContentScrollView {...props}>
                 <View style={styles.mainhead}>
                     <View style={styles.innerhead}>
@@ -21,7 +20,7 @@ export default function DrawerContent({navigation, props}){
                     <Title>JoinME</Title>
                     </View>
                 </View>
-                <Drawer.Section style={styles.section}>
+                <Drawer.Section style={styles.section} >
                 <DrawerItem icon={({color, size}) => (
                     <Ionicons name={'home-outline'} color={color} size={size} />
                 )} label={'Home'} onPress={() => {navigation.navigate('Home')}} />
