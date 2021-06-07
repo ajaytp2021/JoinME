@@ -10,6 +10,8 @@ import AnimateLoadingButton from 'react-native-animate-loading-button';
 import { LogBox } from 'react-native';
 import { Dimensions } from 'react-native';
 import moment from 'moment';
+import { TouchableOpacity } from 'react-native';
+import ProgressDialog from 'react-native-progress-dialog';
 
 export default class ViewPost extends Component{
     
@@ -18,6 +20,7 @@ export default class ViewPost extends Component{
         this.state = {
             data: {},
             skills: [],
+            skillsId: [],
             tasks: [],
             pid: 0,
             cid: 0,
@@ -26,19 +29,52 @@ export default class ViewPost extends Component{
             isreq: false,
             onprj: false, 
             isAnim: true,
+            selectedIndex: null,
+            selectedId: 0,
+            isReq: false,
             marginBottom: {marginBottom : 0}
         }
     }
 
 
     async componentDidMount(){
-        console.log('second');
         this.loadingButton.showLoading(true);
         const {data, uid} = this.props.route.params;
-        await this.setState({data: data[0], skills: data[0].skills.skill, tasks: data[0].skills.tasks, pid: data[0].pid, cid: data[0].cid, uid: uid});
+        await this.setState({data: data[0], skills: data[0].skills.skill, skillsId: data[0].skills.skillid, tasks: data[0].skills.tasks, pid: data[0].pid, cid: data[0].cid, uid: uid});
         LogBox.ignoreAllLogs(true);
         this.reqCheck();
     }
+    requestJob = ({uid, cid, pid, selectedId}) => {
+        this.setState({isReq: true})
+      var apiURL = BASE_URL+'/User/app/api/requestjob.php';
+      var data = {
+            uid: uid,
+            cid: cid,
+            pid: pid,
+            skid: selectedId
+          }
+        fetch(apiURL, {
+          method: 'post',
+          headers: {
+            'Accept': 'application/json',
+            'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(data)
+        })
+      .then(response => response.json())
+      .then(async (json) => {
+      if(json.status === 200){
+          Alert.alert('Information', json.msg);
+          this.reqCheck();
+      }
+      
+      await this.setState({isReq: false})
+      
+      // json.data.map((each) => {
+      
+      // })
+      
+      })}
 
     reqCheck = async () => {
         const apiCheckReq = BASE_URL+'/User/app/api/isrequestjob.php';
@@ -75,12 +111,30 @@ export default class ViewPost extends Component{
         if(await this.state.isreq || await this.state.onprj){
             Alert.alert('Information', 'You cannot make this job request');
         }else{
-            Alert.alert('Information', 'Do job request');
+            const {uid, pid, cid, selectedId} = await this.state;
+            if(selectedId != 0){
+            Alert.alert(
+                'Alert', 
+                'Do you want to request this job?',
+                [
+                    {
+                        text: 'No',
+                        style: 'cancel'
+                    },
+                    {
+                        text: 'Yes',
+                        onPress: () => {
+            this.requestJob({uid, cid, pid, selectedId})
+                        }
+                    }
+                ])
+            }else{
+                Alert.alert('Information', 'Please choose your skill to request')
+            }
         }
     }
 temparr = [];
-    render(){
-        console.log(this.state.data);        
+    render(){      
 
     return(
         <View style={styles.root}>
@@ -92,14 +146,16 @@ temparr = [];
             <View style={styles.innerView}>
                 <Text style={styles.otherText}>Company : {this.state.data.cname}</Text>
                 <Text style={styles.otherText}>End date : {moment(this.state.data.edate).format('Do MMMM YYYY')}</Text>
-                <Text style={[styles.otherText, {color: 'gray', fontWeight: 'bold'}]}>Developers needed</Text>
+                <Text style={[styles.otherText, {color: 'gray', fontWeight: 'bold'}]}>Choose your skill from below</Text>
                   <ScrollView><View style={{flex: 1, flexDirection: 'row'}}>
                       
                   { this.temparr = [],
                   this.state.skills.map((each, index) => {
                       if(!this.temparr.includes(each)){
                         this.temparr.push(each);
-                    return (<Text style={{color: 'white', backgroundColor: PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}} key={index}>{each}</Text>)
+                    return (<TouchableOpacity key={this.state.skillsId[index]} onPressIn={async () => {
+                        await this.setState({selectedIndex: index, selectedId: this.state.skillsId[index]})
+                    }}><Text style={{color: 'white', backgroundColor: this.state.selectedIndex == index ? 'green' : PRIMARY_COLOR, margin: 5, paddingLeft: 10, paddingRight: 10, paddingTop: 5, paddingBottom: 5, borderRadius: 50}}>{each}</Text></TouchableOpacity>)
                       }
                   })}
                   </View></ScrollView>
@@ -107,7 +163,7 @@ temparr = [];
                 </View>
 
                 <View style={[styles.innerView, styles.card]}>
-                <Text style={styles.desc}>Tasks</Text>
+                <Text style={styles.desctxt}>Tasks</Text>
                 <View style={[styles.borderTasks]}>
 
                     {
@@ -115,7 +171,6 @@ temparr = [];
                         this.state.skills.map((_each, _index) => {
                             if(!this.temparr.includes(_each)){
                                 this.temparr.push(_each);
-                                console.log(_each)
                             return <View><Text style={styles.section}>{_each}</Text><Text style={styles.item}>&#9679; {this.state.tasks[_index]}</Text></View>
                             }else{
                                 return <View><Text style={styles.item}>&#9679; {this.state.tasks[_index]}</Text></View>
@@ -149,7 +204,7 @@ temparr = [];
                         onPress={this._onPressHandler.bind(this)}
                     />
                     </View>
-            
+                    <ProgressDialog visible={this.state.isReq} />
         </View>
     );
 }
@@ -187,6 +242,8 @@ const styles = StyleSheet.create({
     desctxt: {
         textAlign: 'center',
         fontWeight: 'bold',
+        textDecorationLine: 'underline',
+        marginBottom: 10
     },desc: {
         margin: 2,
         textAlign: 'center'

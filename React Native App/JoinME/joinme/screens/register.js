@@ -2,20 +2,16 @@ import React from 'react'
 import {Button, Text, View, StyleSheet, Dimensions, Image} from 'react-native'
 import { StatusBar, Keyboard } from 'react-native';
 import { TextInput, RadioButton } from 'react-native-paper';
-import  { Dropdown }  from  'react-native-material-dropdown';
 import { ScrollView } from 'react-native';
 import RegSteps from '../components/RegSteps';
-import DropDownPicker from 'react-native-dropdown-picker';
 import RadioGroup from 'react-native-radio-button-group';
-import { DateTimePickerModal } from 'react-native-paper-datetimepicker';
-import { TouchableWithoutFeedback } from 'react-native';
 import { TouchableOpacity } from 'react-native';
 import { DatePickerModal } from 'react-native-paper-dates';
 import Moment from 'moment'
 
 export default class Register extends React.Component{
   constructor(props){
-    super()
+    super(props)
     
     this.state = {
       isReady: false,
@@ -93,7 +89,7 @@ onChange = async (v) => {
           <ScrollView>
             <RegSteps data={this.state} navigation={this.props.navigation}>
               <RegSteps.Step>
-                <View>
+                <ScrollView>
           <Text style={styles.logintitlesection}>Login information</Text>
                 <TextInput
                   label="Username"
@@ -121,7 +117,6 @@ onChange = async (v) => {
                   style={styles.inputalign}
                   value={this.state.cpass}
                   onChangeText={(cpass)=>this.setState({cpass: cpass})}
-                  error={this.state.pass != this.state.cpass ? true : false}
                 />
                 <TextInput
                   label="Name"
@@ -165,11 +160,11 @@ onChange = async (v) => {
                   editable={false}
                   onChangeText={(dob)=>this.setState({dob: dob})}
                 /></TouchableOpacity>
-                            </View>
+                            </ScrollView>
                           </RegSteps.Step>
 
               <RegSteps.Step>
-                            <View>
+                            <ScrollView>
           <Text style={styles.logintitlesection}>Address</Text>
                             <TextInput
                   label="Address"
@@ -217,12 +212,12 @@ onChange = async (v) => {
                   value={this.state.country}
                   onChangeText={(country)=>this.setState({country: country})}
                 />
-                </View>
+                </ScrollView>
                 
               </RegSteps.Step>
 
               <RegSteps.Step>
-                            <View>
+                            <ScrollView>
           <Text style={styles.logintitlesection}>Contact details</Text>
                             <TextInput
                   label="Email"
@@ -245,7 +240,7 @@ onChange = async (v) => {
                   value={this.state.phone}
                   onChangeText={(phone)=>this.setState({phone: phone})}
                 />
-                </View>
+                </ScrollView>
               </RegSteps.Step>
 
               <RegSteps.Step>

@@ -9,6 +9,8 @@ import ProgressDialog from 'react-native-progress-dialog';
 import {BASE_URL} from '../apiurls/apiURLs';
 import {STORAGE_KEY} from '../global/global';
 import AsyncStorage from '@react-native-community/async-storage'
+import { Platform } from 'react-native';
+import { ToastAndroid } from 'react-native';
 
 export default class Login extends React.Component{
   constructor(props){
@@ -22,6 +24,7 @@ export default class Login extends React.Component{
     };
     
   }
+
 
 
    checkLogin = async () =>{
@@ -73,10 +76,34 @@ export default class Login extends React.Component{
   
 
    componentDidMount() {
+    if (Platform.OS === 'android'){
+      BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid);
+    }
     this.setState({ isReady: true });
     LogBox.ignoreLogs(['Animated: `useNativeDriver`']);
     // BackHandler.addEventListener('hardwareBackPress', this.handleBackButton.bind(this));
     
+  }
+
+  componentWillUnmount() {
+    if (Platform.OS === 'android') {
+      BackHandler.removeEventListener('hardwareBackPress', this.onBackAndroid);
+    }
+  }
+
+  onBackAndroid = () => {
+    // disable return key
+         if (this.props.navigation.isFocused ()) {// determines whether the page is in a focused state
+        if (this.lastBackPressed && this.lastBackPressed + 2000 >= Date.now()) {
+                     // recently pressed the back button within 2 seconds, you can exit the application.
+          // return false;
+                     BackHandler.exitApp (); // exit APP
+        }else{
+          this.lastBackPressed = Date.now();
+                     ToastAndroid.show ( 'press again to exit the application', 1000); // Tips
+          return true;
+        }
+    }
   }
 
 //   handleBackButton(){

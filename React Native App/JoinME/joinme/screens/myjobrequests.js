@@ -8,6 +8,8 @@ import styles from '../css/css';
 import Loading from '../components/loading';
 import {TouchableWithoutFeedback} from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
+import { TouchableOpacity } from 'react-native';
+import { PRIMARY_COLOR, TEXT_WHITE } from '../assets/colors/colors';
 export default class MyJobRequests extends Component {
   constructor(props) {
     super(props);
@@ -161,15 +163,12 @@ export default class MyJobRequests extends Component {
   }
 
   render() {
-    if (this.state.totalCount == 0 && this.state.currentCount == 0) {
-      return !this.state.isVisible ? (
-        <View>
-          <Text>No data found</Text>
-        </View>
-      ) : (
-        <Loading isVisible={this.state.isVisible} />
-      );
-    }
+    if(this.state.isVisible){
+      return (
+          <Loading isVisible={this.state.isVisible} />
+      )
+  }
+  if(this.state.datasource != 0){
     return (
       <View style={styles.root}>
         <FlatList
@@ -188,5 +187,18 @@ export default class MyJobRequests extends Component {
         />
       </View>
     );
+        }else{
+          return(
+          <View style={{alignItems: 'center', justifyContent: 'center', height: '100%'}}>
+                    <Ionicons name={'cash-outline'} color={'gray'} size={30} />
+                    <Text style={{ fontWeight: 'bold', color: 'gray'}}>No job requests</Text>
+                    <TouchableOpacity style={{backgroundColor: PRIMARY_COLOR, padding: 10, borderRadius: 500, marginTop: 10, flexDirection: 'row'}} onPress={async () => {
+                      await this.setState({ isRefreshing: true });
+                      const uid = this.state.uid;
+                      this.getJobRequests(uid, 0);
+                    }}><Text style={{color: TEXT_WHITE}}>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
+                </View>
+          );
+        }
   }
 }

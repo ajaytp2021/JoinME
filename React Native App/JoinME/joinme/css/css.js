@@ -78,7 +78,8 @@ export default styles = StyleSheet.create({
       card: {
           backgroundColor: 'white',
           bottom: 0,
-          marginBottom: 10
+          marginBottom: 10,
+          padding: 5
       },
       toolbarview: {
         width: width,
@@ -97,6 +98,22 @@ export default styles = StyleSheet.create({
       },
       toolbartitle: {
         marginStart: 10
+      },
+      'text': {
+        flex: 1,
+        color: 'rgba(28, 28, 30, 0.68)',
+        textTransform: 'capitalize',
+        fontSize: 14,
+        textAlign: 'center'
+      },
+      viewtitle: {
+        color: 'rgba(28, 28, 30, 0.68)',
+        textTransform: 'capitalize',
+        fontSize: 14,
+        fontWeight: 'bold',
+        textAlign: 'center',
+        padding: 5,
+        textDecorationLine: 'underline'
       }
 })
 const {width, height} = Dimensions.get("screen")

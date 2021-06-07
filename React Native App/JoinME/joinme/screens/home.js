@@ -13,12 +13,14 @@ import { TouchableWithoutFeedback } from 'react-native';
 import moment from 'moment';
 import { Alert, Animated, Easing } from 'react-native';
 import { SafeAreaView } from 'react-native';
-import { PRIMARY_COLOR } from '../assets/colors/colors';
+import { PRIMARY_COLOR, TEXT_WHITE } from '../assets/colors/colors';
 import { ScrollView } from 'react-native';
 import Ripple from 'react-native-material-ripple';
 import { TouchableOpacity } from 'react-native';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { Spinner } from 'native-base';
+import { ToastAndroid } from 'react-native';
+import { Platform } from 'react-native';
 
 
 export default class Home extends Component{
@@ -52,6 +54,10 @@ export default class Home extends Component{
   
     
     async componentDidMount(){
+      if (Platform.OS === 'android'){
+        BackHandler.addEventListener('hardwareBackPress', this.onBackAndroid);
+      }
+  
       if(this.state.isRefreshing || this.state.isFooterLoading){
         this.setState({isVisible: false});
     }else{
@@ -64,6 +70,28 @@ export default class Home extends Component{
 
         
     }
+
+    componentWillUnmount() {
+      if (Platform.OS === 'android') {
+        BackHandler.removeEventListener('hardwareBackPress', this.onBackAndroid);
+      }
+    }
+  
+    onBackAndroid = () => {
+      // disable return key
+           if (this.props.navigation.isFocused ()) {// determines whether the page is in a focused state
+          if (this.lastBackPressed && this.lastBackPressed + 2000 >= Date.now()) {
+                       // recently pressed the back button within 2 seconds, you can exit the application.
+            // return false;
+                       BackHandler.exitApp (); // exit APP
+          }else{
+            this.lastBackPressed = Date.now();
+                       ToastAndroid.show ( 'press again to exit the application', 1000); // Tips
+            return true;
+          }
+      }
+    }
+
     getAllPosts(uid, page){
         // this.refs.loading.show();
         console.log('----'+this.state.isRefreshing+'----'+this.state.isFooterLoading);
@@ -241,7 +269,7 @@ export default class Home extends Component{
                           <TouchableOpacity style={{backgroundColor: PRIMARY_COLOR, padding: 10, borderRadius: 500, marginTop: 10, flexDirection: 'row'}} onPress={async () => {
                             await this.setState({ isVisible: true });
                             this.getAllPosts(this.state.uid, 0)
-                          }}><Text>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
+                          }}><Text style={{color: TEXT_WHITE}}>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
                       </View> ) : (<Loading isVisible={this.state.isVisible} />)
                   );
               }

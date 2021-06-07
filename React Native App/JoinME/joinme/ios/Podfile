@@ -18,6 +18,8 @@ target 'joinme' do
 
 
 
+  pod 'RNCAsyncStorage', :path => '../node_modules/@react-native-community/async-storage'
+
   target 'joinmeTests' do
     inherit! :complete
     # Pods for testing

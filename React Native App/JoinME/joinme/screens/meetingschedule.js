@@ -8,7 +8,7 @@ import { STORAGE_KEY } from '../global/global';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import { TouchableOpacity } from 'react-native';
 import { BASE_URL } from '../apiurls/apiURLs';
-import { PRIMARY_COLOR } from '../assets/colors/colors';
+import { PRIMARY_COLOR, TEXT_WHITE } from '../assets/colors/colors';
 import moment from 'moment';
 import Ripple from 'react-native-material-ripple';
 import { Alert } from 'react-native';
@@ -101,7 +101,7 @@ export default class Meetingschedule extends Component {
                           await this.setState({ isRefreshing: true });
                           const uid = this.state.uid;
                           this.getMeeting({uid});
-                        }}><Text>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
+                        }}><Text style={{color: TEXT_WHITE}}>Refresh</Text><Ionicons name={'refresh-outline'} color={'white'} size={20} style={{marginStart: 5}} /></TouchableOpacity>
                     </View>
                 )
             }

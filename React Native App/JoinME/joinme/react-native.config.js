@@ -3,5 +3,8 @@ module.exports = {
       ios: {},
       android: {},
     },
+    plugins: [
+      'react-native-reanimated/plugin'
+    ],
     assets: ['./assets/fonts/'],
   };
