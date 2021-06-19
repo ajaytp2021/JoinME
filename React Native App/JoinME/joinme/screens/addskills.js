@@ -6,7 +6,7 @@ import { ScrollView } from 'react-native';
 import { Text, View } from 'react-native';
 import RadioGroup from 'react-native-radio-button-group';
 import { BASE_URL } from '../apiurls/apiURLs';
-import { PRIMARY_COLOR } from '../assets/colors/colors';
+import { PRIMARY_COLOR, TEXT_WHITE } from '../assets/colors/colors';
 import Loading from '../components/loading';
 import styles from '../css/css';
 import { STORAGE_KEY } from '../global/global';
@@ -53,7 +53,7 @@ export default class AddSkills extends Component{
                 await this.setState({height: height})
             }}>
                 <View style={{borderWidth: 1, borderColor: PRIMARY_COLOR, borderRadius: 10}}>
-                    <Text style={{padding: 10, backgroundColor: PRIMARY_COLOR, borderTopLeftRadius: 7, borderTopRightRadius: 7}}>Skills</Text>
+                    <Text style={{color: TEXT_WHITE, padding: 10, backgroundColor: PRIMARY_COLOR, borderTopLeftRadius: 7, borderTopRightRadius: 7}}>Skills</Text>
                     <View style={{margin: 20, height: this.state.height / 3}}>
                         <ScrollView style={{marginBottom: 10}}>
                 <RadioGroup
@@ -88,14 +88,14 @@ export default class AddSkills extends Component{
                         ]
                     )
                 }}>
-                    <Text style={{textAlign: 'center'}}>Add skill</Text>
+                    <Text style={{color: TEXT_WHITE, textAlign: 'center'}}>Add skill</Text>
                 </TouchableOpacity>      
                
                 </View>
                 </View>
 
                 <View style={{flex: 2, marginBottom: 10, marginTop: 10, height: this.state.height / 2}}>
-                    <Text style={{backgroundColor: PRIMARY_COLOR, padding: 10}}>Added Skills list</Text>
+                    <Text style={{color: TEXT_WHITE, backgroundColor: PRIMARY_COLOR, padding: 10}}>Added Skills list</Text>
                     <ScrollView>
                     {
                         this.state.addedSkillSet.length != 0 ? this.state.addedSkillSet.map((e, i) => {
@@ -231,6 +231,7 @@ export default class AddSkills extends Component{
     .then(response => response.json())
     .then(async (json) => {
       if(json.status === 200){
+        Alert.alert('Information', json.msg)
           this.fetchSkills({uid})
       }else{
           Alert.alert('Information', json.msg)

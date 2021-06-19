@@ -200,7 +200,7 @@ temparr = [];
                         titleFontSize={16}
                         titleColor='white'
                         backgroundColor={PRIMARY_COLOR}
-                        borderRadius={4}
+                        borderRadius={0}
                         onPress={this._onPressHandler.bind(this)}
                     />
                     </View>

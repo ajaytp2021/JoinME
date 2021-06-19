@@ -6,6 +6,7 @@ import MybuttonOutlined from '../components/mybuttonoutlined';
 import { Alert } from 'react-native';
 import { BASE_URL } from '../apiurls/apiURLs';
 import ProgressDialog from 'react-native-progress-dialog';
+import { ScrollView } from 'react-native';
 
 class Step extends Component {
   state = {}
@@ -13,7 +14,7 @@ class Step extends Component {
     return (
       <View>
         {this.props.children}
-    {this.props.isFirst ? (<View><Mybutton text={this.props.btnText} onPress={this.props.nextStep} btncolor={'#4827FF'} /></View>) : (<View><MybuttonOutlined text={'Previous'} onPress={this.props.prevClick} btncolor={'#4827FF'} /><Mybutton text={this.props.btnText} onPress={this.props.nextStep} btncolor={'#4827FF'} /></View>)}
+    {this.props.isFirst ? (<ScrollView><Mybutton text={this.props.btnText} onPress={this.props.nextStep} btncolor={'#4827FF'} /></ScrollView>) : (<ScrollView><MybuttonOutlined text={'Previous'} onPress={this.props.prevClick} btncolor={'#4827FF'} /><Mybutton text={this.props.btnText} onPress={this.props.nextStep} btncolor={'#4827FF'} /></ScrollView>)}
       </View>
     )
   }
@@ -35,6 +36,7 @@ export default class RegSteps extends Component {
     if(this.state.index === this.props.children.length - 1){
       console.log(this.props.data)
       var check = true;
+      var checkpass = false;
       this.props.data.uname ? null : check = false;
       this.props.data.pass ? null : check = false;
       this.props.data.name ? null : check = false;
@@ -48,12 +50,13 @@ export default class RegSteps extends Component {
       this.props.data.email ? null : check = false;
       this.props.data.phone ? null : check = false;
       this.props.data.about ? null : check = false;
-
+      this.props.data.pass == this.props.data.cpass ? checkpass = true : checkpass = false;
       const navigation = this.props.navigation;
 
       const { uname, name, pass, gender, dob, address, pincode, district, state, country, email, phone, about} = this.props.data
 
       if(check){
+        if(checkpass){
        Alert.alert(
         "Verify",
         "Do you want to submit?",
@@ -103,6 +106,9 @@ export default class RegSteps extends Component {
           }
         ]
       )
+      }else{
+        Alert.alert('Password mismatch')
+      }
       }else{
         Alert.alert('Please check all details', 'Some field(s) you forgot to fill')
       }

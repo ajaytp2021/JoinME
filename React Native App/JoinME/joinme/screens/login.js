@@ -11,6 +11,7 @@ import {STORAGE_KEY} from '../global/global';
 import AsyncStorage from '@react-native-community/async-storage'
 import { Platform } from 'react-native';
 import { ToastAndroid } from 'react-native';
+import { ScrollView } from 'react-native';
 
 export default class Login extends React.Component{
   constructor(props){
@@ -133,7 +134,7 @@ export default class Login extends React.Component{
           </View>
         </View>
         <View style={styles.btm}>
-        <View style={styles.innerbtm}>
+        <ScrollView style={styles.innerbtm}>
           <Text style={styles.logintitlesection}>Login</Text>
           <Text style={styles.info}>This login portal is only for the employees.</Text>
           <TextInput
@@ -159,7 +160,7 @@ export default class Login extends React.Component{
     <MybuttonOutlined text="Sign Up" onPress={this.registerClick} btncolor={'#4827FF'} />
 
     
-        </View>
+        </ScrollView>
         </View> 
         <ProgressDialog visible={this.state.isVisible} />
       </View>
@@ -194,7 +195,7 @@ titlesection: {
   },
   top: {
     flex: 1,
-    paddingBottom: 30,
+    paddingBottom: 30
   },
   innertop: {
     backgroundColor: '#0000',

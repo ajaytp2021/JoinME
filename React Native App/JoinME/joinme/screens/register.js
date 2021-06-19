@@ -85,7 +85,7 @@ onChange = async (v) => {
           const {x, y, width, height} = event.nativeEvent.layout;
           await this.setState({contentViewHeight: height})
         }}>
-        <View style={styles.innerbtm}>
+        <ScrollView style={styles.innerbtm}>
           <ScrollView>
             <RegSteps data={this.state} navigation={this.props.navigation}>
               <RegSteps.Step>
@@ -264,7 +264,7 @@ onChange = async (v) => {
 
 
     
-        </View>
+        </ScrollView>
         </View>
           
         
